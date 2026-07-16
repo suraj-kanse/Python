@@ -65,10 +65,7 @@ Summary & Takeaways
 - Strings are Immutable: You can slice and read strings like an array, but you cannot overwrite a specific character inside them (TypeError).
 - Dictionaries vs. Lists: Lists use numbered indexes (0, 1, 2). Dictionaries use custom Keys. Calling a non-existent Key throws a KeyError.
 - The None Type: Used strictly to define an empty or missing value (like a failed API request), preventing false readings like 0.
-- 
-- 
-- 
-- 
+- None is crucial for representing the intentional absence of data.
 
 
 
