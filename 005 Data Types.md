@@ -12,14 +12,17 @@ Python supports highly precise math out-of-the-box, unlike some other languages 
 - Built-in Libraries: You can import math for things like math.pi, or import random to use random.random() and random.choice([1, 2, 3]) to pick a random item from a list.
 
 2. Strings (str)
-Strings handle text and can be defined using single quotes 'chai' or double quotes "chai".
+Strings handle text and can be defined using single quotes 'suraj' or double quotes "suraj".
 - List-like Behavior: You can grab individual letters using brackets: username[0] returns the first letter. username[-1] returns the very last letter.
 - Slicing: username[1:3] grabs letters starting at index 1 and stopping before index 3.
 - Immutability Reminder: If you try to reassign a specific letter like username[0] = 'A', your program will crash with a TypeError. Strings are immutable; they do not support item assignment.
 
-
-
-
+3. Lists (list)
+Lists are what other languages call "Arrays". They are a continuous block of memory holding multiple items, denoted by square brackets [ ].
+- Syntax: myList = [1, 2, "suraj", 3.14]
+- They are 0-indexed.
+- You can nest lists inside lists: [1, 2, ['a', 'b'], 3].
+- You can check how many items are in a list using the len(myList) function.
 
 
 
