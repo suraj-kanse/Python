@@ -24,9 +24,11 @@ Lists are what other languages call "Arrays". They are a continuous block of mem
 - You can nest lists inside lists: [1, 2, ['a', 'b'], 3].
 - You can check how many items are in a list using the len(myList) function.
 
-
-
-
+4. Dictionaries (dict)
+Dictionaries store data in Key-Value pairs, denoted by curly braces { }.
+- Syntax: myD = {"one": "suraj s k", "two": "maybe Someone exist"}
+- Unlike lists, dictionaries do not use 0, 1, 2 as indexes. You access the data by calling its specific key: myD["one"].
+- Interview Trap: If you try to access a key that doesn't exist, Python will crash and throw a KeyError.
 
 
 
