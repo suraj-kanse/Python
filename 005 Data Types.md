@@ -55,6 +55,10 @@ A massive beginner mistake is confusing the symbols. You must memorize these nam
 - ( ) = Parentheses (used for Tuples and calling Functions).
 - { } = Braces / Curly Braces (used for Dictionaries and Sets).
 
+Why Not Just Use Lists for Everything?
+Why Not? If you have a massive dataset of 10,000 users, finding a specific user in a List means the computer might have to count from 0 to 9,999 to find them. By using a Dictionary, you can assign the user's ID as the "Key". When you ask the Dictionary for that specific Key, it retrieves the user instantly without counting through the others. Understanding when to use which Data Type is what separates a beginner from a pro.
+
+
 Summary & Takeaways
 - Everything is an Object: In Python documentation, Data Types are fundamentally referred to as "Object Types."
 - Numbers: Python natively handles highly precise, massive mathematical calculations (** is the power operator) and complex numbers (3+4j).
