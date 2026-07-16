@@ -40,10 +40,10 @@ Tuples look and act very much like Lists, but they are defined using parentheses
 Sets are based on the mathematical concept of sets.
 - Sets only hold unique values. If you try to create a set with ```[a, b, b, c]```, the set will automatically collapse it down to ```[a, b, c]```.
 
-
-
-
-
+7. Booleans & None
+- Booleans (bool): Just True and False (Notice the capital letters!).
+- None: Python's version of null. It is used to represent the intentional absence of a value.
+Real-World Example: If you query a Weather API and it fails to return a temperature, you don't set the temperature to 0 (because 0° is an actual temperature). You set it to None.
 
 
 
