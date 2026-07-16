@@ -53,7 +53,13 @@ You must memorize which common data types fall into which category:
 - - Booleans (bool)
 - - Strings (str)
 - - Tuples (tuple)
+- Mutable (Can safely alter the internal data of the memory object):
+- - Lists (list)
+- - Dictionaries (dict)
+- - Byte arrays (bytearray)
+- - Sets (set)
 
+(Note: Trying to change a specific letter inside an existing string "in-place" is impossible because strings are immutable. You have to create a whole new string. We will see how mutability works practically when Lists and Dictionaries are introduced later).
 
 
 
