@@ -16,6 +16,7 @@ Strings handle text and can be defined using single quotes 'suraj' or double quo
 - List-like Behavior: You can grab individual letters using brackets: username[0] returns the first letter. username[-1] returns the very last letter.
 - Slicing: username[1:3] grabs letters starting at index 1 and stopping before index 3.
 - Immutability Reminder: If you try to reassign a specific letter like username[0] = 'A', your program will crash with a TypeError. Strings are immutable; they do not support item assignment.
+- Python also supports special strings like byte strings b'a\x01c' and Unicode strings for emojis.
 
 3. Lists (list)
 Lists are what other languages call "Arrays". They are a continuous block of memory holding multiple items, denoted by square brackets [ ].
@@ -46,10 +47,22 @@ Sets are based on the mathematical concept of sets.
 Real-World Example: If you query a Weather API and it fails to return a temperature, you don't set the temperature to 0 (because 0° is an actual temperature). You set it to None.
 
 
+A Note on Syntax: Brackets vs. Parentheses vs. Braces
+A massive beginner mistake is confusing the symbols. You must memorize these names:
+- [ ] = Brackets (used for Lists / Arrays).
+- ( ) = Parentheses (used for Tuples and calling Functions).
+- { } = Braces / Curly Braces (used for Dictionaries and Sets).
 
-
-
-
+Summary & Takeaways
+- Everything is an Object: In Python documentation, Data Types are fundamentally referred to as "Object Types."
+- Numbers: Python natively handles highly precise, massive mathematical calculations (** is the power operator) and complex numbers (3+4j).
+- Strings are Immutable: You can slice and read strings like an array, but you cannot overwrite a specific character inside them (TypeError).
+- Dictionaries vs. Lists: Lists use numbered indexes (0, 1, 2). Dictionaries use custom Keys. Calling a non-existent Key throws a KeyError.
+- The None Type: Used strictly to define an empty or missing value (like a failed API request), preventing false readings like 0.
+- 
+- 
+- 
+- 
 
 
 
