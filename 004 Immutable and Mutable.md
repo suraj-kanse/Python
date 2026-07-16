@@ -1,0 +1,37 @@
+The concepts of "Mutable" (can change) and "Immutable" (cannot change) are the most misunderstood topics in Python. Most tutorials confusingly teach that you "can't change an immutable variable." That is completely wrong. You can always reassign a variable.
+
+The truth is all about Memory Management. In Python, variables do not contain data; they simply point to objects in memory. Immutability means that once an object is created in memory, the data inside that specific memory box cannot be altered.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
