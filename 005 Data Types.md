@@ -32,9 +32,25 @@ Dictionaries store data in Key-Value pairs, denoted by curly braces { }.
 
 5. Tuples (tuple)
 Tuples look and act very much like Lists, but they are defined using parentheses ( ).
-- Syntax: myTup = (1, 2, 3, 4)
-- You can access them via index just like a list: myTup[0].
-- The Mystery: The instructor deliberately held back the exact difference between Lists and Tuples to build curiosity, but hinted that it relates to Mutability (Lists are mutable, Tuples are immutable).
+- Syntax: ```myTup = (1, 2, 3, 4)```
+- You can access them via index just like a list: ```myTup[0]```.
+- Lists are mutable, Tuples are immutable.
+
+6. Sets (set)
+Sets are based on the mathematical concept of sets.
+- Sets only hold unique values. If you try to create a set with ```[a, b, b, c]```, the set will automatically collapse it down to ```[a, b, c]```.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
