@@ -30,12 +30,20 @@ print(username) # Outputs: Live simply, thrive fully
 Conclusion: The variable changed where it pointed, but the original "suraj" string object in memory was never mutated. This is what Immutability means.
 
 
-
-
-
-
-
-
+The Reference Trap (Interview Essential)
+Interviewers will test your understanding of memory references using code exactly like this:
+```
+x = 10
+y = x
+x = 15
+print(y)
+```
+- The Trap: A beginner might think y outputs 15 because y was set to x, and x is now 15.
+- The Reality: The output is 10.
+- - x = 10 ➔ Memory creates object 10. x points to it.
+- - y = x ➔ y does not point to x. It points to whatever x is currently pointing to. So, y points directly to the memory object 10.
+- - x = 15 ➔ Memory creates a new object 15. x changes its arrow to point to 15.
+- - y's arrow never moved. It is still pointing to the original 10.
 
 
 
