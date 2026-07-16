@@ -9,10 +9,14 @@ Instead, it does this:
 - It creates a label (variable) named x.
 - It creates a reference (a pointer/arrow) from x to the memory location of 10.
 
-
-
-
-
+The Immutability Confusion
+Strings and Integers are Immutable.
+If they are immutable, why does this code work without crashing?
+```
+username = "suraj"
+username = "Live simply, thrive fully"
+print(username) # Outputs: Live simply, thrive fully
+```
 
 
 
