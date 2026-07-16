@@ -45,8 +45,14 @@ print(y)
 - - x = 15 ➔ Memory creates a new object 15. x changes its arrow to point to 15.
 - - y's arrow never moved. It is still pointing to the original 10.
 
-
-
+The Official Data Types List
+You must memorize which common data types fall into which category:
+- Immutable (Cannot change the internal memory object):
+- - Integers (int)
+- - Floating-point numbers (float)
+- - Booleans (bool)
+- - Strings (str)
+- - Tuples (tuple)
 
 
 
