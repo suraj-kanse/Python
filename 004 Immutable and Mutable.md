@@ -53,6 +53,7 @@ You must memorize which common data types fall into which category:
 - - Booleans (bool)
 - - Strings (str)
 - - Tuples (tuple)
+
 - Mutable (Can safely alter the internal data of the memory object):
 - - Lists (list)
 - - Dictionaries (dict)
@@ -61,7 +62,14 @@ You must memorize which common data types fall into which category:
 
 (Note: Trying to change a specific letter inside an existing string "in-place" is impossible because strings are immutable. You have to create a whole new string. We will see how mutability works practically when Lists and Dictionaries are introduced later).
 
-
+Summary & Takeaways
+- Everything is an Object: Variables in Python do not hold data; they hold references (pointers) to objects in memory.
+- Immutability: Once an immutable object (like a String or Integer) is created in memory, its contents can never be changed.
+- Immutability does not mean a variable is locked forever (like a Constant in JavaScript). It means the specific object in memory cannot be altered in place.
+- Variable Reassignment: Assigning a new value to an existing variable does not mutate the old object; it creates a brand new memory object and changes where the variable points.
+- Garbage Collection: Objects in memory that no longer have any variables pointing to them are automatically deleted by Python's Garbage Collector.
+- Memory Reference Rule: If y = x, both variables point to the same object. If you reassign x to a new immutable object, y stays pointing at the original object.
+- Understanding memory references is critical for writing optimized Python code and avoiding bugs when passing data between functions.
 
 
 
