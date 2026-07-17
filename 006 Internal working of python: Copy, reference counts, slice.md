@@ -24,13 +24,19 @@ a = a + 2
 - It sends ```5 + 2``` to the CPU for calculation.
 - The CPU returns ```7```.
 - Python creates a brand new memory object for ```7```.
-- It moves the a pointer to ```7```. (The 5 is left behind for garbage collection).
+- It moves the a pointer to ```7```. (The ```5``` is left behind for garbage collection).
 
+Slicing vs. Direct Assignment (The Ultimate Bug Causer)
+This is where junior developers write code that completely corrupts their data. You must understand the difference between pointing to the same list vs. making a copy.
 
-
-
-
-
+Scenario 1: The Direct Assignment Bug
+```
+L1 = [1, 2, 3]
+L2 = L1
+L1[0] = 44
+print(L2) # Outputs: [44, 2, 3]
+```
+- Why did L2 change? Because ```L2 = L1``` does not create a new list. It simply tells ```L2``` to point to the exact same memory object that ```L1``` is pointing to. If you alter the object through ```L1```, ```L2``` sees the exact same alteration.
 
 
 
