@@ -47,6 +47,7 @@ h1[0] = 55
 print(h2) # Outputs: [1, 2, 3]
 ```
 - Why didn't h2 change? Because the slice operator ```[:]``` forces Python to create a brand new object in memory and copy the data over. ```h1``` and ```h2``` are now completely separate lists.
+- (Note: You can also explicitly use the ```import copy``` module to achieve this, but ```[:]``` is the standard Pythonic shorthand).
 
 
 
