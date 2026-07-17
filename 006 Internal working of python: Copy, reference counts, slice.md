@@ -8,9 +8,10 @@ When you assign a variable (e.g., ```score = 10```), Python creates a memory obj
 - Garbage Collection: If you delete all those variables (or reassign them), the reference count drops to ```0```. Python's internal Garbage Collector immediately sweeps in, deletes the object, and frees up your RAM.
 - The "Number & String" Exception: Python knows you will use small numbers and common strings frequently. To optimize performance, Python delays the garbage collection for small numbers and strings, keeping them cached in memory just in case you need them again soon.
 
-
-
-
+The Interview Trap: Data Types and Variables
+Crucial Concept: In Python, variables do not have data types. Only the objects in memory have data types.
+- If you write ```a = 3```, a is not an integer variable. The memory object ```3``` is the integer.
+- This is why you can dynamically do ```a = "suraj"``` on the very next line without crashing. ```a``` is just an empty pointer that drops the ```3``` and grabs the ```"suraj"``` string object instead.
 
 
 
