@@ -54,10 +54,20 @@ print(h2) # Outputs: [1, 2, 3]
 Python provides two different ways to check if things are "equal," and they do entirely different things behind the scenes.
 - ```==``` checks if the values inside the objects are the same.
 - ```is``` checks if the variables point to the exact same memory object.
+```
+m = [1, 2, 3]
+n = [1, 2, 3] # Explicitly creating a new, separate list in memory
 
+print(m == n) # True (Because the contents 1,2,3 are identical)
+print(m is n) # False (Because they are two separate objects in memory)
+```
 
-
-
+Summary & Takeaways
+- Garbage Collection: Python tracks how many variables point to an object. When the count hits ```0```, the object is deleted from memory (except for cached small numbers/strings).
+- Variables are Typeless: Only memory objects have data types (Int, Str, etc.). Variables are just empty labels that point to them.
+- Direct Assignment ```(a = b)``` DOES NOT copy lists. It makes both variables point to the exact same list. Altering one alters both.
+- Slicing (```[:]```) creates a copy: Using ```l2 = l1[:]``` forces Python to create a new, separate memory object.
+- Value vs Identity: Use ```==``` to check if values match. Use ```is``` to check if two variables share the exact same memory reference.
 
 
 
