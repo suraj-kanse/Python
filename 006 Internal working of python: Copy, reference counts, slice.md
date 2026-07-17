@@ -50,8 +50,10 @@ print(h2) # Outputs: [1, 2, 3]
 - (Note: You can also explicitly use the ```import copy``` module to achieve this, but ```[:]``` is the standard Pythonic shorthand).
 
 
-
-
+== vs. is (The Identity Check)
+Python provides two different ways to check if things are "equal," and they do entirely different things behind the scenes.
+- ```==``` checks if the values inside the objects are the same.
+- ```is``` checks if the variables point to the exact same memory object.
 
 
 
