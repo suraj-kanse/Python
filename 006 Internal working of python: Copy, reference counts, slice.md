@@ -38,10 +38,15 @@ print(L2) # Outputs: [44, 2, 3]
 ```
 - Why did L2 change? Because ```L2 = L1``` does not create a new list. It simply tells ```L2``` to point to the exact same memory object that ```L1``` is pointing to. If you alter the object through ```L1```, ```L2``` sees the exact same alteration.
 
-
-
-
-
+Scenario 2: The Slicing Fix (Creating a Shallow Copy)
+How do you safely duplicate a list so you don't corrupt the original? You use the empty Slice operator ```[:]```.
+```
+h1 = [1, 2, 3]
+h2 = h1[:] # This slice syntax means "grab everything from start to end"
+h1[0] = 55
+print(h2) # Outputs: [1, 2, 3]
+```
+- Why didn't h2 change? Because the slice operator ```[:]``` forces Python to create a brand new object in memory and copy the data over. ```h1``` and ```h2``` are now completely separate lists.
 
 
 
