@@ -14,8 +14,17 @@ Crucial Concept: In Python, variables do not have data types. Only the objects i
 - This is why you can dynamically do ```a = "suraj"``` on the very next line without crashing. ```a``` is just an empty pointer that drops the ```3``` and grabs the ```"suraj"``` string object instead.
 
 
-
-
+How Calculations Work in Memory
+What happens internally when you do math?
+```
+a = 5
+a = a + 2
+```
+- Python looks at the memory reference for ```a``` (which is ```5```).
+- It sends ```5 + 2``` to the CPU for calculation.
+- The CPU returns ```7```.
+- Python creates a brand new memory object for ```7```.
+- It moves the a pointer to ```7```. (The 5 is left behind for garbage collection).
 
 
 
