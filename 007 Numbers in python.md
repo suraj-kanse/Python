@@ -22,9 +22,12 @@ Python has a built-in ```math``` library (```import math```) that handles advanc
   - ```math.trunc(2.8)``` ➔ ```2```
   - ```math.trunc(-2.8)``` ➔ ```-2``` (Moving towards zero, unlike floor which went to -3).
 
-
-
-
+The ```random``` Library
+You don't have to write complex logic to generate random data; Python provides the ```random``` library.
+- ```random.random()```: Generates a random decimal between 0 and 1.
+- ```random.randint(1, 10)```: Generates a random whole number between 1 and 10 (inclusive).
+- ```random.choice(['One', 'Two', 'Three', 'Four', 'Five', 'Six'])```: Randomly picks one item from a list.
+- ```random.shuffle(my_list)```: Randomly scrambles the order of items inside an existing list.
 
 
 
