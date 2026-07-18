@@ -64,9 +64,12 @@ Sets are a unique data type defined by curly braces ```{ }```. They follow the r
 - Interview Trap: If you want to create an empty set, you cannot use ```{}```. That creates an empty dictionary. You must use ```set()```.
 
 
-
-
-
+Booleans (True / False)
+Booleans are technically a subclass of numbers in Python.
+- ```True``` is evaluated mathematically as ```1```.
+- ```False``` is evaluated mathematically as ```0```.
+- Because of this, ```True + 4``` will output ```5```. (While this is fun to know, never actually write code like this).
+- Memory Identity Check: If you check ```True == 1```, it returns ```True``` (their values are equivalent). But if you check ```True``` is ```1```, it returns ```False``` (they are completely different objects in memory).
 
 
 
