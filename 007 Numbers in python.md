@@ -47,9 +47,11 @@ print(result) # Safely outputs: 0.0
 - Python also has a ```fractions``` module to calculate exact fractional math like ```Fraction(2, 7)```.
 
 
-
-
-
+Other Number Systems (Octal, Hex, Binary)
+Python natively supports other mathematical bases:Python natively supports other mathematical bases:
+- Octal (Base 8): Start with ```0o``` (e.g., ```0o20```).
+- Hexadecimal (Base 16): Start with ```0x``` (e.g., ```0xFF```).
+- Binary (Base 2): Start with ```0b``` (e.g., ```0b1000```).
 
 
 
