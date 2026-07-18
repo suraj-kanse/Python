@@ -13,9 +13,11 @@ You'll see code like ```x + y * z```. In real production environments, writing c
 Type Coercion Warning:
 If you add an integer and a float (```40 + 2.23```), Python will automatically upgrade the result to a float (```42.23```) to prevent data loss. However, it's best practice to explicitly cast your types (e.g., ```float(40) + 2.23```) to avoid unexpected bugs down the line.
 
-
-
-
+```math``` Library (Floor vs. Truncate)
+Python has a built-in ```math``` library (```import math```) that handles advanced calculations. Two functions confuse beginners the most:
+- ```math.floor(x)```: Always rounds DOWN to the nearest whole number on the number line.
+  - ```math.floor(3.9)``` ➔ ```3```
+  - ```math.floor(-3.1)``` ➔ ```-4``` (Because -4 is further down the number line than -3).
 
 
 
