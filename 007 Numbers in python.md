@@ -7,11 +7,11 @@ Already know the basics (```+```, ```-```, ```*```, ```/```). But Python has a f
   - Python Superpower: Python can calculate massive powers like ```2 ** 1000``` instantly without crashing, automatically managing the memory required for the gigantic output.
 - Modulo/Remainder (```%```): ```5 % 2``` returns the remainder of the division (Outputs: ```1```).
 
+The Production Code Warning:
+You'll see code like ```x + y * z```. In real production environments, writing code like this will get rejected during code review. You should always use parentheses to explicitly declare the order of operations, making your code readable and bug-free: ```x + (y * z)```.
 
-
-
-
-
+Type Coercion Warning:
+If you add an integer and a float (```40 + 2.23```), Python will automatically upgrade the result to a float (```42.23```) to prevent data loss. However, it's best practice to explicitly cast your types (e.g., ```float(40) + 2.23```) to avoid unexpected bugs down the line.
 
 
 
