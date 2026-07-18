@@ -18,6 +18,9 @@ Python has a built-in ```math``` library (```import math```) that handles advanc
 - ```math.floor(x)```: Always rounds DOWN to the nearest whole number on the number line.
   - ```math.floor(3.9)``` ➔ ```3```
   - ```math.floor(-3.1)``` ➔ ```-4``` (Because -4 is further down the number line than -3).
+- ```math.trunc(x)```: Chops off the decimal point, moving the number towards zero.
+  - ```math.trunc(2.8)``` ➔ ```2```
+  - ```math.trunc(-2.8)``` ➔ ```-2``` (Moving towards zero, unlike floor which went to -3).
 
 
 
