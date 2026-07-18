@@ -2,9 +2,9 @@ Strings in Python are incredibly powerful but they are immutable. Once created, 
 
 Defining Strings
 Python offers three ways to define a string. There is no technical difference in performance between them; they just serve different formatting needs:
-- Single Quotes: ```'chai'```
-- Double Quotes: ```"chai"```
-- Triple Quotes: ```'''chai'''``` or ```"""chai"""```
+- Single Quotes: ```'hello'```
+- Double Quotes: ```"hello"```
+- Triple Quotes: ```'''hello'''``` or ```"""hello"""```
   - Pro-Tip: Triple quotes are used when you need to preserve the exact formatting of a massive block of text (like multiple lines, line breaks, and tabs) without using escape characters. They are heavily used for "Docstrings" (documentation inside functions).
 
 Slicing & Dicing (The Exact Syntax)
