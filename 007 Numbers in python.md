@@ -72,6 +72,21 @@ Booleans are technically a subclass of numbers in Python.
 - Memory Identity Check: If you check ```True == 1```, it returns ```True``` (their values are equivalent). But if you check ```True``` is ```1```, it returns ```False``` (they are completely different objects in memory).
 
 
+Difference between ```print()```, ```str()```, and ```repr()```.
+When you pass a string like "Hello" into these three functions, they treat it differently based on who they think is reading the output.
+
+1. ```print("Hello")``` (For the Hello)
+- What it does: It writes the text directly to the console so a human can read it.
+- Output: ```Hello``` (No quotes).
+
+2. ```str("Hello")``` (For the Hello)
+- What it does: It forces an object to convert into a human-readable string. If you type this directly into the Python shell, the shell will output the string value.
+- Output: ```'Hello'``` (In the shell). But if you use it in code, it evaluates purely to the text ```Hello```.
+
+3. ```repr("Hello")``` (For the Developer/Debugging)
+- What it does: repr stands for representation. It is meant to return a string that represents a valid Python object. It shows you exactly what the data is under the hood, so it includes the quotation marks to explicitly tell the developer, "This is a string object."
+- Output: ```"'Hello'"``` (It actually returns the text wrapped in explicit quotes).
+If you use ```print(repr(x))```, the console will output ```'10'```. The explicit quotes immediately tell you, "Ah! This is a string, not a math number!"
 
 Summary & Takeaways
 - Parentheses First: Always use parentheses in mathematical operations for readability and safety in production code.
