@@ -44,7 +44,7 @@ from decimal import Decimal
 result = Decimal('0.1') + Decimal('0.1') + Decimal('0.1') - Decimal('0.3')
 print(result) # Safely outputs: 0.0
 ```
-
+- Python also has a ```fractions``` module to calculate exact fractional math like ```Fraction(2, 7)```.
 
 
 
