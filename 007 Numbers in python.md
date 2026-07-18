@@ -31,12 +31,19 @@ You don't have to write complex logic to generate random data; Python provides t
 
 
 
+The Floating Point Problem (0.1 + 0.1 + 0.1 - 0.3)
+This is a famous computer science problem. If you execute:
+```print(0.1 + 0.1 + 0.1 - 0.3)```
+You would expect ```0.0```. Instead, Python outputs something like ```5.551115123125783e-17```.
+- Why? Computers calculate in binary, and fractions like ```0.1``` cannot be represented perfectly in binary, leading to tiny precision errors that compound.
+- The Solution (```decimal``` module): When writing financial or scientific software where exact precision is mandatory, use the ```Decimal``` module.
+```
+from decimal import Decimal
 
-
-
-
-
-
+# You MUST pass the numbers as strings to avoid the binary conversion error
+result = Decimal('0.1') + Decimal('0.1') + Decimal('0.1') - Decimal('0.3')
+print(result) # Safely outputs: 0.0
+```
 
 
 
