@@ -73,7 +73,13 @@ Booleans are technically a subclass of numbers in Python.
 
 
 
-
+Summary & Takeaways
+- Parentheses First: Always use parentheses in mathematical operations for readability and safety in production code.
+- Floor vs Truncate: ```math.floor()``` rounds down on the number line. ```math.trunc()``` chops off the decimal, rounding ***towards zero***.
+- Randomness: Use the ```random``` module for generating numbers, picking choices, or shuffling lists.
+- The Decimal Module: Standard floats have precision errors. Use ```from decimal import Decimal``` (and pass values as strings) for exact financial calculations.
+- Empty Sets: ```set()``` creates an empty set. ```{}``` creates an empty dictionary.
+- Booleans as Numbers: ```True``` mathematically equals ```1```, and ```False``` equals ```0```.
 
 
 
