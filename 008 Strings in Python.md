@@ -14,6 +14,9 @@ Python treats strings almost exactly like Lists (Arrays). You can grab specific 
 - ```username[:]``` ➔ ```"masala chai"``` (Leaving it blank grabs the whole string).
 - ```username[3:]``` ➔ ```"ala chai"``` (Starts at 3, goes to the very end).
 - ```username[:7]``` ➔ ```"masala "``` (Starts from the very beginning, stops before 7).
+- ```numbers = "0123456789"```
+- ```numbers[0:7:2]``` ➔ ```"0246"``` (Starts at 0, stops before 7, but skips every 2nd number).
+- ```numbers[0:7:3]``` ➔ ```"036"``` (Hops 3 steps at a time).
 
 
 
