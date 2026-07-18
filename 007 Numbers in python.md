@@ -52,6 +52,29 @@ Python natively supports other mathematical bases:Python natively supports other
 - Octal (Base 8): Start with ```0o``` (e.g., ```0o20```).
 - Hexadecimal (Base 16): Start with ```0x``` (e.g., ```0xFF```).
 - Binary (Base 2): Start with ```0b``` (e.g., ```0b1000```).
+You can easily convert standard integers into these formats using built-in functions: ```oct(64)```, ```hex(64)```, ```bin(64)```.
+
+Sets (Mathematical Grouping)
+Sets are a unique data type defined by curly braces ```{ }```. They follow the rules of mathematical set theory.
+- Sets only keep unique values. ```{1, 2, 2, 3}``` automatically becomes ```{1, 2, 3}```.
+- You can perform high-speed math operations between two sets:
+  - Intersection (```&```): Finds items that exist in both sets.
+  - Union (```|```): Combines both sets, keeping only unique values.
+  - Difference (```-```): Subtracts items of one set from another.
+- Interview Trap: If you want to create an empty set, you cannot use ```{}```. That creates an empty dictionary. You must use ```set()```.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
