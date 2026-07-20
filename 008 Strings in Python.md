@@ -23,13 +23,20 @@ If ```.split()``` turns a String into a List, how do you turn a List back into a
 - ", ".join(my_list) ➔ "lemon, masala, ginger"
 - "-".join(my_list) ➔ "lemon-masala-ginger"
 
+Placeholders & Formatting
+You often need to inject variables into a string dynamically (like generating a user's receipt). You use curly braces ```{}``` as placeholders, followed by the ```.format()``` method.
+```
+chai_type = "Masala"
+quantity = 2
 
+# The order inside .format() must match the order of the {} placeholders
+receipt = "I ordered {} cups of {} chai".format(quantity, chai_type)
+print(receipt) # Outputs: I ordered 2 cups of Masala chai
+```
 
-
-
-
-
-
+The Windows Path Problem (Escape Characters & Raw Strings)
+There is a massive bug that catches almost every developer.
+If you try to print a Windows file path like ```C:\user\new\test```, Python will completely destroy the string.
 
 
 
