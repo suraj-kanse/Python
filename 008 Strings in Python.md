@@ -37,6 +37,23 @@ print(receipt) # Outputs: I ordered 2 cups of Masala chai
 The Windows Path Problem (Escape Characters & Raw Strings)
 There is a massive bug that catches almost every developer.
 If you try to print a Windows file path like ```C:\user\new\test```, Python will completely destroy the string.
+- Why? In Python, the backslash ```\``` is an "escape character" used for special commands. ```\n``` means "New Line", and ```\t``` means "Tab". Python sees ```\new``` and immediately breaks the text onto a new line.
+
+Solution 1: Double Escaping
+You have to put a double backslash ```\\``` everywhere to tell Python you actually want to print a backslash.
+```
+path = "C:\\user\\new\\test"
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
