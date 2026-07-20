@@ -10,16 +10,18 @@ Python offers three ways to define a string. There is no technical difference in
 Slicing & Dicing (The Exact Syntax)
 Python treats strings almost exactly like Lists (Arrays). You can grab specific chunks of a string using the slice syntax: ```[start : stop : step/hop]```.
 - ```numbers = "0123456789"```
-- ```numbers[0:9]``` ->  
-- ```numbers[:]``` ->  
-- ```numbers[3:]``` ->  
-- ```numbers[:7]``` ->  
+- ```numbers[0:9]``` ➔  
+- ```numbers[:]``` ➔  
+- ```numbers[3:]``` ➔  
+- ```numbers[:7]``` ➔  
 - ```numbers[0:7:2]``` ➔ ```"0246"``` (Starts at 0, stops before 7, but skips every 2nd number).
 - ```numbers[0:7:3]``` ➔ ```"036"``` (Hops 3 steps at a time).
 
-
-
-
+List ➔ String: The ```join``` Method
+If ```.split()``` turns a String into a List, how do you turn a List back into a String? You use the ```.join()``` method on a string character.
+- my_list = ['lemon', 'masala', 'ginger']
+- ", ".join(my_list) ➔ "lemon, masala, ginger"
+- "-".join(my_list) ➔ "lemon-masala-ginger"
 
 
 
