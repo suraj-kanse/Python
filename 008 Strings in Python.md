@@ -41,14 +41,12 @@ If you try to print a Windows file path like ```C:\user\new\test```, Python will
 
 Solution 1: Double Escaping
 You have to put a double backslash ```\\``` everywhere to tell Python you actually want to print a backslash.
-```
-path = "C:\\user\\new\\test"
-```
+```path = "C:\\user\\new\\test"```
 
-
-
-
-
+Solution 2: Raw Strings (The Industry Standard)
+Put a lowercase ```r``` outside the very front of the string. This tells Python: "This is a Raw String. Ignore all escape characters and treat it exactly as typed."
+```path = r"C:\user\new\test"```
+- Warning/Bug: quirk: Even with a raw string, if your string ends with a trailing backslash (e.g., ```r"C:\user\new\"```), Python will throw a syntax error.
 
 
 
