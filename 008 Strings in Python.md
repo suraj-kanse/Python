@@ -48,9 +48,10 @@ Put a lowercase ```r``` outside the very front of the string. This tells Python:
 ```path = r"C:\user\new\test"```
 - Warning/Bug: quirk: Even with a raw string, if your string ends with a trailing backslash (e.g., ```r"C:\user\new\"```), Python will throw a syntax error.
 
-
-
-
+Containing Questions (in)
+You can ask Python a direct True/False question to see if a word exists inside a string using the ```in``` keyword.
+- ```"masala" in "masala chai"``` ➔ ```True```
+- ```"mint" in "masala chai"``` ➔ ```False```
 
 
 
