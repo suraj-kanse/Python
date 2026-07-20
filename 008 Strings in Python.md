@@ -53,8 +53,12 @@ You can ask Python a direct True/False question to see if a word exists inside a
 - ```"masala" in "masala chai"``` ➔ ```True```
 - ```"mint" in "masala chai"``` ➔ ```False```
 
-
-
+Summary & Takeaways
+- Immutability: Strings cannot be changed in-place. Methods like ```.replace()``` do not alter the original string; they return a brand new string.
+- Slicing (```[start:stop:hop]```): Remember that the ```stop``` index is never included in the result.
+- Input Cleaning: Always use ```.strip()``` on user inputs to remove accidental spaces.
+- Data Conversion: Use ```.split()``` to turn a String into a List. Use ```" ".join()``` to turn a List into a String.
+- Windows Paths: Always prefix file paths with ```r``` (Raw String) to prevent Python from accidentally triggering escape commands like ```\n``` (new line).
 
 
 
