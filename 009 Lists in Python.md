@@ -12,7 +12,9 @@ print(tea_varieties[-1]) # Outputs: "White" (Negative indexing grabs from the en
 
 Slicing Lists ```[start:stop:hop]```
 Just like strings, you can slice a list. The ```stop``` index is never included in the final output.
-
+- ```tea_varieties[1:3]``` ➔ ```['Green', 'Oolong']``` (Starts at 1, stops before 3).
+- ```tea_varieties[1:]``` ➔ Grabs everything from index 1 to the end.
+- ```tea_varieties[:2]``` ➔ Grabs everything from the start, stopping before index 2.
 
 
 
