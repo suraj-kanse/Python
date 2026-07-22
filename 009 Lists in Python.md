@@ -39,8 +39,8 @@ print(tea_varieties)
 tea_varieties[1:2] = ["Lemon"]
 ```
 
-
-
+Essential List Methods
+- ```.append("value")```: Adds an item to the very end of the list.
 
 
 
