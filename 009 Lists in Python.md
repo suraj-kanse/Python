@@ -25,8 +25,14 @@ tea_varieties[1] = "Herbal"
 # Result: ['Black', 'Herbal', 'Oolong', 'White']
 ```
 
-
-
+Scenario 2: Slicing Assignment (The Trap)
+```
+tea_varieties = ["Black", "Green", "Oolong", "White"]
+# Watch what happens when you slice [1:2] but pass a String!
+tea_varieties[1:2] = "Lemon"
+print(tea_varieties) 
+# BAD Result: ['Black', 'L', 'e', 'm', 'o', 'n', 'Oolong', 'White']
+```
 
 
 
