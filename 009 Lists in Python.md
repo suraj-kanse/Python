@@ -41,6 +41,9 @@ tea_varieties[1:2] = ["Lemon"]
 
 Essential List Methods
 - ```.append("value")```: Adds an item to the very end of the list.
+- ```.pop()```: Removes and returns the very last item in the list.
+- ```.remove("Green")```: Searches for the exact value "Green" and removes the first instance of it. (It does not return the value).
+- ```.insert(1, "Matcha")```: Inserts "Matcha" exactly at index 1, shifting everything else to the right.
 
 
 
