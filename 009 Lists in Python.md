@@ -33,9 +33,11 @@ tea_varieties[1:2] = "Lemon"
 print(tea_varieties) 
 # BAD Result: ['Black', 'L', 'e', 'm', 'o', 'n', 'Oolong', 'White']
 ```
-
-
-
+- Why did it spell out Lemon? When you use slice assignment ```[1:2]```, Python expects you to pass an Iterable (like another list) to replace that chunk. Because you passed a plain String, Python treated the string as an iterable and unpacked it letter by letter!
+- The Fix: You must pass it as a List:
+```
+tea_varieties[1:2] = ["Lemon"]
+```
 
 
 
