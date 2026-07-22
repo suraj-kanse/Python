@@ -57,17 +57,34 @@ tea_copy = tea_varieties.copy()
 # .copy() forces Python to create a brand new, separate object in memory.
 ```
 
+The Advanced Magic: List Comprehension
+Introducing a highly "Pythonic" syntax that beginners often find weird, but experts use constantly.
+List Comprehension allows you to generate a fully populated list in a single line of code, combining a for loop and the logic into the brackets.
+Goal: Create a list of the squared numbers from 0 to 9.
+```
+# The old, long way:
+squared_nums = []
+for x in range(10):
+    squared_nums.append(x ** 2)
 
+# The List Comprehension Way (Industry Standard):
+squared_nums = [x ** 2 for x in range(10)]
+print(squared_nums)
+# Outputs: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
 
+How to read it:
+- Look at the right side first: ```for x in range(10)```. This tells us we are looping 10 times, and ```x``` will be 0, 1, 2, 3...
+- Look at the left side: ```x ** 2```. This is the exact logic/value that will be inserted into the list during each loop.
+- Another Example (Cubed Numbers up to 4): ```cubed = [y ** 3 for y in range(5)] ➔ [0, 1, 8, 27, 64]```
 
-
-
-
-
-
-
-
-
+Summary & Takeaways
+- Lists are defined with ```[ ]``` and are Mutable (you can change them in-place).
+- When replacing a slice of a list (e.g., ```myList[1:2] = ...```), you must pass the replacement as a List ```["Item"]```, otherwise Python will unpack strings letter-by-letter.
+- Use ```.append()``` to add to the end, and ```.insert(index, value)``` to add at a specific position.
+- Use ```.pop()``` to remove the last item, and ```.remove(value)``` to remove a specific named item.
+- Always use ```.copy()``` if you need to duplicate a list without tying them to the same memory reference.
+- List Comprehension (```[logic for item in loop]```) is the fastest, cleanest way to generate a list dynamically.
 
 
 
