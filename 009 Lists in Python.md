@@ -45,8 +45,17 @@ Essential List Methods
 - ```.remove("Green")```: Searches for the exact value "Green" and removes the first instance of it. (It does not return the value).
 - ```.insert(1, "Matcha")```: Inserts "Matcha" exactly at index 1, shifting everything else to the right.
 
+The Reference vs. Copy Problem (Interview Essential)
+This goes back to the memory management lesson.
+```
+# THE BUG:
+tea_copy = tea_varieties
+# If you alter tea_copy, tea_varieties ALSO changes because they share the exact same memory reference.
 
-
+# THE FIX:
+tea_copy = tea_varieties.copy() 
+# .copy() forces Python to create a brand new, separate object in memory.
+```
 
 
 
