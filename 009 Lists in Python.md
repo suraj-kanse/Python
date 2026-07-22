@@ -10,8 +10,8 @@ print(tea_varieties[0])  # Outputs: "Black"
 print(tea_varieties[-1]) # Outputs: "White" (Negative indexing grabs from the end)
 ```
 
-
-
+Slicing Lists ```[start:stop:hop]```
+Just like strings, you can slice a list. The ```stop``` index is never included in the final output.
 
 
 
