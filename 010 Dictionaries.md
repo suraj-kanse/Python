@@ -25,17 +25,30 @@ Dictionaries are Mutable, meaning you can change them in-place.
 - ```del``` keyword: Physically deletes the item from memory. ```del chai_types["green"]```.
 - ```.clear()```: Empties the entire dictionary, leaving it as ```{}```.
 
+Looping Through Dictionaries (The 3 Ways)
+Looping through a dictionary is slightly different than looping through a list because you have to decide if you want the Keys, the Values, or Both.
 
+1. Looping for Keys (Default behavior)
+```
+for chai in chai_types:
+    print(chai)
+# Outputs: masala, ginger, green (Only prints the Keys)
+```
 
+2. Looping for Values
+```
+for chai in chai_types:
+    # Use the Key to access the Value
+    print(chai_types[chai]) 
+# Outputs: spicy, zesty, mild
+```
 
-
-
-
-
-
-
-
-
+3. Looping for Both (The ```.items()``` Method)
+If you want both the Key and the Value at the same time, you must use the ```.items()``` method.
+```
+for key, value in chai_types.items():
+    print(f"Key is {key} and Value is {value}")
+```
 
 
 
