@@ -3,57 +3,57 @@ Lists (often called Arrays in other languages) are the most heavily used data st
 Creating and Accessing Lists
 Lists are defined using square brackets ```[ ]```. They are zero-indexed, meaning the first item is at index ```0```.
 ```
-tea_varieties = ["Black", "Green", "Oolong", "White"]
+different_sports= ["Football", "Cricket", "Badminton", "Tennis"]
 
 # Accessing items
-print(tea_varieties[0])  # Outputs: "Black"
-print(tea_varieties[-1]) # Outputs: "White" (Negative indexing grabs from the end)
+print(different_sports[0])  # Outputs: "Football"
+print(different_sports[-1]) # Outputs: "Tennis" (Negative indexing grabs from the end)
 ```
 
 Slicing Lists ```[start:stop:hop]```
 Just like strings, you can slice a list. The ```stop``` index is never included in the final output.
-- ```tea_varieties[1:3]``` ➔ ```['Green', 'Oolong']``` (Starts at 1, stops before 3).
-- ```tea_varieties[1:]``` ➔ Grabs everything from index 1 to the end.
-- ```tea_varieties[:2]``` ➔ Grabs everything from the start, stopping before index 2.
+- ```different_sports[1:3]``` ➔ ```['Cricket', 'Badminton']``` (Starts at 1, stops before 3).
+- ```different_sports[1:]``` ➔ Grabs everything from index 1 to the end.
+- ```different_sports[:2]``` ➔ Grabs everything from the start, stopping before index 2.
 
 The "Slicing Assignment" Trap
 Because Lists are Mutable, you can change their contents in-place. However, you must be extremely careful when assigning new values using a slice rather than a single index.
 
 Scenario 1: Standard Assignment (Safe)
 ```
-tea_varieties[1] = "Herbal"
-# Result: ['Black', 'Herbal', 'Oolong', 'White']
+different_sports[1] = "Herbal"
+# Result: ['Football', 'Herbal', 'Badminton', 'Tennis']
 ```
 
 Scenario 2: Slicing Assignment (The Trap)
 ```
-tea_varieties = ["Black", "Green", "Oolong", "White"]
+different_sports= ["Football", "Cricket", "Badminton", "Tennis"]
 # Watch what happens when you slice [1:2] but pass a String!
-tea_varieties[1:2] = "Lemon"
-print(tea_varieties) 
-# BAD Result: ['Black', 'L', 'e', 'm', 'o', 'n', 'Oolong', 'White']
+different_sports[1:2] = "Hockey"
+print(different_sports) 
+# BAD Result: ['Football', 'H', 'o', 'c', 'k', 'e', 'y', 'Badminton', 'Tennis']
 ```
-- Why did it spell out Lemon? When you use slice assignment ```[1:2]```, Python expects you to pass an Iterable (like another list) to replace that chunk. Because you passed a plain String, Python treated the string as an iterable and unpacked it letter by letter!
+- Why did it spell out Hockey? When you use slice assignment ```[1:2]```, Python expects you to pass an Iterable (like another list) to replace that chunk. Because you passed a plain String, Python treated the string as an iterable and unpacked it letter by letter!
 - The Fix: You must pass it as a List:
 ```
-tea_varieties[1:2] = ["Lemon"]
+different_sports[1:2] = ["Hockey"]
 ```
 
 Essential List Methods
 - ```.append("value")```: Adds an item to the very end of the list.
 - ```.pop()```: Removes and returns the very last item in the list.
-- ```.remove("Green")```: Searches for the exact value "Green" and removes the first instance of it. (It does not return the value).
-- ```.insert(1, "Matcha")```: Inserts "Matcha" exactly at index 1, shifting everything else to the right.
+- ```.remove("Cricket")```: Searches for the exact value "Cricket" and removes the first instance of it. (It does not return the value).
+- ```.insert(1, "Wresting")```: Inserts "Wresting" exactly at index 1, shifting everything else to the right.
 
 The Reference vs. Copy Problem (Interview Essential)
 This goes back to the memory management lesson.
 ```
 # THE BUG:
-tea_copy = tea_varieties
-# If you alter tea_copy, tea_varieties ALSO changes because they share the exact same memory reference.
+sports_copy = different_sports
+# If you alter sports_copy, different_sports ALSO changes because they share the exact same memory reference.
 
 # THE FIX:
-tea_copy = tea_varieties.copy() 
+sports_copy = different_sports.copy() 
 # .copy() forces Python to create a brand new, separate object in memory.
 ```
 
