@@ -19,9 +19,9 @@ Python treats strings almost exactly like Lists (Arrays). You can grab specific 
 
 List ➔ String: The ```join``` Method
 If ```.split()``` turns a String into a List, how do you turn a List back into a String? You use the ```.join()``` method on a string character.
-- my_list = ['Kabaddi', 'cricket', 'Hockey']
-- ", ".join(my_list) ➔ "Kabaddi, cricket, Hockey"
-- "-".join(my_list) ➔ "Kabaddi-cricket-Hockey"
+- ```my_list = ['Kabaddi', 'cricket', 'Hockey']```
+- ```", ".join(my_list) ➔ "Kabaddi, cricket, Hockey"```
+- ```"-".join(my_list) ➔ "Kabaddi-cricket-Hockey"```
 
 Placeholders & Formatting
 You often need to inject variables into a string dynamically (like generating a user's receipt). You use curly braces ```{}``` as placeholders, followed by the ```.format()``` method.
