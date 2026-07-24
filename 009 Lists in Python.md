@@ -21,8 +21,8 @@ Because Lists are Mutable, you can change their contents in-place. However, you 
 
 Scenario 1: Standard Assignment (Safe)
 ```
-different_sports[1] = "Herbal"
-# Result: ['Football', 'Herbal', 'Badminton', 'Tennis']
+different_sports[1] = "Kabaddi"
+# Result: ['Football', 'Kabaddi', 'Badminton', 'Tennis']
 ```
 
 Scenario 2: Slicing Assignment (The Trap)
