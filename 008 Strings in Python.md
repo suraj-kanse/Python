@@ -50,8 +50,8 @@ Put a lowercase ```r``` outside the very front of the string. This tells Python:
 
 Containing Questions (in)
 You can ask Python a direct True/False question to see if a word exists inside a string using the ```in``` keyword.
-- ```"cricket" in "masala chai"``` ➔ ```True```
-- ```"mint" in "masala chai"``` ➔ ```False```
+- ```"cricket" in "my_list"``` ➔ ```True```
+- ```"Volleyball" in "my_list"``` ➔ ```False```
 
 Summary & Takeaways
 - Immutability: Strings cannot be changed in-place. Methods like ```.replace()``` do not alter the original string; they return a brand new string.
