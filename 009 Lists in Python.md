@@ -33,8 +33,8 @@ different_sports[1:2] = "Hockey"
 print(different_sports) 
 # BAD Result: ['Football', 'H', 'o', 'c', 'k', 'e', 'y', 'Badminton', 'Tennis']
 ```
-- Why did it spell out Hockey? When you use slice assignment ```[1:2]```, Python expects you to pass an Iterable (like another list) to replace that chunk. Because you passed a plain String, Python treated the string as an iterable and unpacked it letter by letter!
-- The Fix: You must pass it as a List:
+- Why did it spell out Hockey? When you use slice assignment ```[1:2]```, Python expects you to pass an **Iterable** (like another list) to replace that chunk. Because you passed a plain String, Python treated the string as an iterable and unpacked it letter by letter!
+- The Fix: You must pass it as a ***List***:
 ```
 different_sports[1:2] = ["Hockey"]
 ```
