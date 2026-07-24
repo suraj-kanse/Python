@@ -19,19 +19,19 @@ Python treats strings almost exactly like Lists (Arrays). You can grab specific 
 
 List ➔ String: The ```join``` Method
 If ```.split()``` turns a String into a List, how do you turn a List back into a String? You use the ```.join()``` method on a string character.
-- my_list = ['lemon', 'masala', 'ginger']
-- ", ".join(my_list) ➔ "lemon, masala, ginger"
-- "-".join(my_list) ➔ "lemon-masala-ginger"
+- my_list = ['Kabaddi', 'cricket', 'Hockey']
+- ", ".join(my_list) ➔ "Kabaddi, cricket, Hockey"
+- "-".join(my_list) ➔ "Kabaddi-cricket-Hockey"
 
 Placeholders & Formatting
 You often need to inject variables into a string dynamically (like generating a user's receipt). You use curly braces ```{}``` as placeholders, followed by the ```.format()``` method.
 ```
-chai_type = "Masala"
-quantity = 2
+destination = "Tokyo"
+tickets = 2
 
 # The order inside .format() must match the order of the {} placeholders
-receipt = "I ordered {} cups of {} chai".format(quantity, chai_type)
-print(receipt) # Outputs: I ordered 2 cups of Masala chai
+receipt = "I booked {} tickets to {}".format(tickets, destination)
+print(receipt) # Outputs: I booked 2 tickets to Tokyo 
 ```
 
 The Windows Path Problem (Escape Characters & Raw Strings)
@@ -50,7 +50,7 @@ Put a lowercase ```r``` outside the very front of the string. This tells Python:
 
 Containing Questions (in)
 You can ask Python a direct True/False question to see if a word exists inside a string using the ```in``` keyword.
-- ```"masala" in "masala chai"``` ➔ ```True```
+- ```"cricket" in "masala chai"``` ➔ ```True```
 - ```"mint" in "masala chai"``` ➔ ```False```
 
 Summary & Takeaways
