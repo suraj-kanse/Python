@@ -102,3 +102,46 @@ while True:
     else:
         print("Invalid number, try again.")
 ```
+
+Problem 8: Prime Number Checker
+Goal: Check if a number is prime (only divisible by 1 and itself).
+```
+number = 29
+is_prime = True
+
+if number > 1:
+    # Check all numbers from 2 up to (but not including) the number itself
+    for i in range(2, number):
+        if (number % i) == 0:
+            is_prime = False
+            break
+
+print("Is prime?", is_prime)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
