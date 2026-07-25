@@ -16,10 +16,14 @@ print(tea_types[-1]) # Outputs: "Oolong"
 print(tea_types[1:]) # Outputs: ('Green', 'Oolong')
 ```
 
-
-
-
-
+The Immutability Check (The Fatal Error)
+Because Tuples are immutable, they do not support item assignment.
+```
+# THIS WILL CRASH YOUR PROGRAM
+tea_types[0] = "Lemon" 
+# TypeError: 'tuple' object does not support item assignment
+```
+- Note: Because you cannot alter them, Tuples DO NOT have methods like ```.append()```, ```.remove()```, ```.pop()```, or ```.insert()```. Those belong strictly to Lists.
 
 
 
