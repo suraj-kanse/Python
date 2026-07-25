@@ -157,11 +157,12 @@ while attempts < max_retries:
 ```
 
 Summary & Takeaways
-- for loop: Best for iterating over a known sequence (lists, strings, ranges).
-- while loop: Best for running code an unknown number of times until a specific condition is met (like waiting for valid user input).
-- continue: Skips the rest of the current iteration and jumps back to the top of the loop.
-- break: Destroys the loop entirely, executing no further iterations.
-- 
+- ```for``` loop: Best for iterating over a known sequence (lists, strings, ranges).
+- ```while``` loop: Best for running code an unknown number of times until a specific condition is met (like waiting for valid user input).
+- ```continue```: Skips the rest of the current iteration and jumps back to the top of the loop.
+- ```break```: Destroys the loop entirely, executing no further iterations.
+- Chained Conditionals: Python allows math-like syntax for checking ranges: ```1 <= input <= 10```.
+- The ```time``` module: ```time.sleep(seconds)``` can be used to intentionally pause script execution, which is vital for API rate-limiting strategies (Exponential Backoff).
 
 
 
