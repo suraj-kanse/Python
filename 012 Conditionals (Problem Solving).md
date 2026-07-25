@@ -8,8 +8,8 @@ Before diving into conditionals, you need to know how to get dynamic data into y
 user_score = input("Give me a score value: ")
 ```
 
-
-
+The Massive Input Trap:
+Every single piece of data that comes from the ```input()``` function is treated as a **String**, even if the user types a number. If a user types ```200```, Python sees ```"200"```. If you try to do math on this (like ```user_score / 2```), your program will crash with an **Unsupported Operand Error.**
 
 
 
