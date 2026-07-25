@@ -2,9 +2,11 @@ Conditionals (```if```, ```elif```, ```else```) are how you make your code "thin
 Instead of your program executing every single line of code from top to bottom, conditionals allow your program to make decisions based on specific data criteria. 
 Learning conditionals through practical problems is vastly superior to just learning the syntax.
 
-
-
-
+Taking User Input
+Before diving into conditionals, you need to know how to get dynamic data into your program using the ```input()``` function.
+```
+user_score = input("Give me a score value: ")
+```
 
 
 
