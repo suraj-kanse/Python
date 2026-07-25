@@ -77,12 +77,15 @@ if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
 else:
     print(year, "is NOT a Leap Year")
 ```
+- Using parentheses ```( )``` to group your ```and```/```or``` logic together so the compiler (and other developers) know exactly which conditions are paired.
 
-
-
-
-
-
+Key Exercises Covered (For Practice)
+Several practical scenarios you can practice coding yourself:
+- Age Grouping: Categorize by age limits.
+- Ticket Pricing: Base price on age, apply a $2 discount if the day is Wednesday (```price -= 2```).
+- Grade Calculator: Standard A, B, C, D, F based on numerical score breakpoints.
+- Fruit Ripeness: Check the fruit type first (```if fruit == "Banana":```), then nest conditionals inside it to check the color (```if color == "Green":```).
+- Weather Activities: Suggest activities based on weather strings (Sunny, Rainy, Snowy).
 
 
 
