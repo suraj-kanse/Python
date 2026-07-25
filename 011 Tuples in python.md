@@ -30,15 +30,31 @@ What CAN you do with a Tuple?
 Even though you can't mutate an existing Tuple, you can perform analytical operations on it or create brand new Tuples out of it.
 - Check Length: ```len(tea_types)``` returns ```3```.
 - Concatenation (Merging): You can add two Tuples together to create a brand new third Tuple.
+```
+more_tea = ("Herbal", "Earl Grey")
+all_tea = tea_types + more_tea
+# all_tea is now ('Black', 'Green', 'Oolong', 'Herbal', 'Earl Grey')
+```
+- Count Items: ```tea_types.count("Green")``` will scan the Tuple and return how many times "Green" appears (returns ```1```). If the item doesn't exist, it returns ```0```.
+- Conditional Checks: You can ask if an item exists inside the Tuple.
+```
+if "Green" in tea_types:
+    print("I have Green tea")
+```
 
+Tuple Unwrapping (The Interview Essential)
+This is an incredibly common operation in Python, especially when dealing with data coming back from a database (databases frequently return data as Tuples to ensure it hasn't been altered).
+Tuple Unpacking allows you to extract all the items in a Tuple and assign them to individual variables in a single, clean line of code.
+```
+# Our Tuple has 3 items
+tea_types = ("Black", "Green", "Oolong")
 
+# We create 3 separate variables on the left side, matching the number of items
+black, green, oolong = tea_types
 
-
-
-
-
-
-
+# The variables are now populated with the strings!
+print(green) # Outputs: "Green"
+```
 
 
 
