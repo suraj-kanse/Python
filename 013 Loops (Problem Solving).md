@@ -119,21 +119,49 @@ if number > 1:
 print("Is prime?", is_prime)
 ```
 
+Problem 9: Check for Duplicates in a List
+Goal: Check if all elements in a list are unique. If a duplicate is found, exit and print it.
+- Strategy: Use a ```set()``` to keep track of items we've already seen, because checking if an item exists inside a set is incredibly fast.
+```
+items = ["apple", "banana", "orange", "apple", "mango"]
+unique_items = set()
+
+for item in items:
+    if item in unique_items:
+        print("Duplicate found:", item)
+        break
+    unique_items.add(item)
+```
+
+Advanced Real-World Use Case: Exponential Backoff
+A final "bonus" scenario that is heavily used in real-world API development and password reset systems.
 
 
+Problem 10: Exponential Backoff Strategy
+Goal: Implement a retry mechanism that doubles the wait time after every failed attempt.
+```
+import time
 
+wait_time = 1
+max_retries = 5
+attempts = 0
 
+while attempts < max_retries:
+    print("Attempt", attempts + 1, "- Waiting", wait_time, "seconds")
+    
+    # Pauses the entire Python program for the specified seconds
+    time.sleep(wait_time) 
+    
+    wait_time *= 2 # Double the wait time
+    attempts += 1
+```
 
-
-
-
-
-
-
-
-
-
-
+Summary & Takeaways
+- for loop: Best for iterating over a known sequence (lists, strings, ranges).
+- while loop: Best for running code an unknown number of times until a specific condition is met (like waiting for valid user input).
+- continue: Skips the rest of the current iteration and jumps back to the top of the loop.
+- break: Destroys the loop entirely, executing no further iterations.
+- 
 
 
 
