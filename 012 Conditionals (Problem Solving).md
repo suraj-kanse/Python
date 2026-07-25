@@ -51,15 +51,32 @@ else:
 price = 12 if age >= 18 else 8
 ```
 
+Exiting a Program Early
+Sometimes you encounter an error (like a user having a grade score over 100) and you just want the program to completely shut down immediately. You can do this by using the ```exit()``` function.
+```
+score = 110
 
+if score > 100:
+    print("Error: Score cannot be above 100")
+    exit() # The program instantly stops here
+```
 
+Logical Operators (```and```, ```or```)
+When a decision requires multiple criteria to be checked simultaneously, you use logical operators.
+- and: Both conditions must be True for the code to run.
+- or: Only one of the conditions needs to be True for the code to run.
 
+Problem: Calculate if a year is a Leap Year.
+Rule: It must be divisible by 4 AND NOT divisible by 100... OR it can be divisible by 400.
+```
+year = 2024
 
-
-
-
-
-
+# We use the Modulo (%) operator. If % equals 0, it means it is perfectly divisible.
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print(year, "is a Leap Year")
+else:
+    print(year, "is NOT a Leap Year")
+```
 
 
 
