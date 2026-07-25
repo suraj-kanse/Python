@@ -26,9 +26,10 @@ tea_types[0] = "Lemon"
 - Note: Because you cannot alter them, Tuples DO NOT have methods like ```.append()```, ```.remove()```, ```.pop()```, or ```.insert()```. Those belong strictly to Lists.
 
 
-
-
-
+What CAN you do with a Tuple?
+Even though you can't mutate an existing Tuple, you can perform analytical operations on it or create brand new Tuples out of it.
+- Check Length: ```len(tea_types)``` returns ```3```.
+- Concatenation (Merging): You can add two Tuples together to create a brand new third Tuple.
 
 
 
