@@ -38,34 +38,67 @@ Sometimes you need to skip a specific loop iteration or stop the loop entirely.
 Problem 3: Skip an Iteration (```continue```)
 Goal: Print the multiplication table for ```3```, but skip the 5th iteration.
 - ```continue```: Immediately stops the current loop iteration and jumps to the next one.
-
-````
+```
 number = 3
 
 for i in range(1, 11):
     if i == 5:
         continue # Skips the rest of the code below and goes to i = 6
     print(number, 'x', i, '=', number * i)
-````
+```
 
+Problem 4: Reverse a String using a Loop
+Goal: Reverse a string without using built-in string methods or slicing.
+```
+input_string = "Python"
+reversed_string = ""
 
+for char in input_string:
+    # Adding the new character IN FRONT of the existing string reverses it
+    reversed_string = char + reversed_string 
 
+print(reversed_string) # Outputs: nohtyP
+```
 
+Problem 5: Find the First Non-Repeated Character (```break```)
+Goal: Given a string, find the very first character that does not repeat.
+- ```break```: Immediately destroys the loop completely. No further iterations will occur.
+```
+input_string = "teeter"
 
+for char in input_string:
+    if input_string.count(char) == 1:
+        print("First non-repeated char is:", char)
+        break # We found it! Stop searching immediately.
+```
 
+The ```while``` Loop
+A ```while``` loop runs continuously as long as a specific condition remains ```True```.
 
+Problem 6: Calculate Factorial
+Goal: Calculate the factorial of a number using a ```while``` loop (e.g., 5! = 5 * 4 * 3 * 2 * 1).
+- Interview Tip: Don't get trapped thinking you have to use Recursion (a function calling itself) just because an interviewer asks for a factorial. Stick to the requirements—if they ask for a ```while``` loop, write a ```while``` loop.
+```
+number = 5
+factorial = 1
 
+while number > 0:
+    factorial *= number
+    number -= 1 # Decrement the number so the loop eventually stops
 
+print("Factorial is:", factorial)
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
+Problem 7: Validate User Input (The Infinite Loop)
+Goal: Keep asking the user for input until they provide a number between 1 and 10.
+- ```while True```: creates an intentional infinite loop. The only way out is to trigger a ```break```.
+```
+while True:
+    user_input = int(input("Enter value between 1 and 10: "))
+    # Python allows chained comparisons!
+    if 1 <= user_input <= 10:
+        print("Thanks!")
+        break
+    else:
+        print("Invalid number, try again.")
+```
