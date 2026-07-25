@@ -10,13 +10,29 @@ user_score = input("Give me a score value: ")
 
 The Massive Input Trap:
 Every single piece of data that comes from the ```input()``` function is treated as a **String**, even if the user types a number. If a user types ```200```, Python sees ```"200"```. If you try to do math on this (like ```user_score / 2```), your program will crash with an **Unsupported Operand Error.**
+- The Fix: You must explicitly convert the input into an integer or float using Type Casting.
+```
+user_score = int(input("Give me a score value: "))
+```
 
+Basic Conditionals (```if```, ```elif```, ```else```)
+Python uses strict indentation (tabs/spaces) to define which code belongs inside a conditional block. There are no curly braces ```{}```.
 
+Problem: Categorize a person's age (Child < 13, Teenager 13-19, Adult 20-59, Senior 60+).
+```
+age = 25
 
-
-
-
-
+if age < 13:
+    print("Child")
+elif age < 20: 
+    # We only need to check < 20 because the previous 'if' already filtered out < 13
+    print("Teenager")
+elif age < 60:
+    print("Adult")
+else:
+    # If none of the above are true, it falls to 'else'
+    print("Senior")
+```
 
 
 
