@@ -71,7 +71,12 @@ print(type(tea_types))
 # Outputs: <class 'tuple'>
 ```
 
-
+Summary & Takeaways
+- Tuples = ```( )```. They are exactly like Lists, but they are Immutable (locked in memory).
+- Performance: Because they are immutable, Tuples are more memory-efficient and faster than Lists.
+- No Mutation: You cannot use ```.append()```, ```.pop()```, or reassign indexes (```tup[0] = "new"```).
+- Concatenation: You can merge two Tuples (```tup1 + tup2```), but this creates a brand new Tuple in memory.
+- Tuple Unpacking: You can quickly assign Tuple data to individual variables: ```var1, var2 = ("item1", "item2")```. The number of variables must perfectly match the length of the Tuple.
 
 
 
