@@ -56,14 +56,20 @@ black, green, oolong = tea_types
 print(green) # Outputs: "Green"
 ```
 
+The Unpacking Rule: The number of variables on the left side of the equals sign must exactly match the number of items inside the Tuple on the right side. If they don't match, Python will throw a ```ValueError``` ("too many values to unpack" or "not enough values to unpack").
 
+Nested Tuples
+Just like Lists, you can put Tuples inside of other Tuples.
+```
+nested_tuple = ("Black", (1, 2, 3), "Oolong")
+```
 
-
-
-
-
-
-
+🔍 Checking the Data Type
+If you are ever unsure whether a variable is holding a List or a Tuple, you can check it dynamically using the type() function.
+```
+print(type(tea_types)) 
+# Outputs: <class 'tuple'>
+```
 
 
 
