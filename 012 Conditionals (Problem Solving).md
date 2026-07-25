@@ -34,11 +34,22 @@ else:
     print("Senior")
 ```
 
+The Short-Hand Conditional (Ternary Operator)
+Python has a brilliant one-line syntax for simple ```if/else``` assignments. This is incredibly common in production code to keep things clean.
 
+Problem: Adult tickets are $12, child tickets (<18) are $8.
+```
+age = 26
 
+# The Standard Way
+if age >= 18:
+    price = 12
+else:
+    price = 8
 
-
-
+# The One-Line Short-Hand Way
+price = 12 if age >= 18 else 8
+```
 
 
 
