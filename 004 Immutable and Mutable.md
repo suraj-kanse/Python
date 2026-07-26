@@ -21,11 +21,11 @@ print(username) # Outputs: no_replacement
 - Why people get confused: They think, "Wait, I just changed username from 'suraj' to 'no_replacement', so how can strings be immutable?"
 
 - The Reality (What happens in memory):
-- - Python creates a memory object containing "suraj". The label username points to it.
-- - When you assign "no_replacement", Python does not go into the "suraj" memory box and erase the letters.
-- - Instead, Python creates a brand new memory object containing "no_replacement".
-- - It then deletes the reference arrow pointing to "suraj" and points username to the new "no_replacement" object.
-- - The original "suraj" object is left floating in memory until Python's Garbage Collector comes along, sees that no variables are pointing to it, and deletes it.
+  - Python creates a memory object containing "suraj". The label username points to it.
+  - When you assign "no_replacement", Python does not go into the "suraj" memory box and erase the letters.
+  - Instead, Python creates a brand new memory object containing "no_replacement".
+  - It then deletes the reference arrow pointing to "suraj" and points username to the new "no_replacement" object.
+  - The original "suraj" object is left floating in memory until Python's Garbage Collector comes along, sees that no variables are pointing to it, and deletes it.
 
 Conclusion: The variable changed where it pointed, but the original "suraj" string object in memory was never mutated. This is what Immutability means.
 
