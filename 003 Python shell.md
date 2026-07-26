@@ -12,9 +12,9 @@ What you immediately see:
 
 Immediate Execution & Testing
 The shell executes code line-by-line the moment you hit enter.
-- Rapid Prototyping: It's perfect for quick tests. For example, if you don't know what multiplying a string by 4 does ("hello" * 4), you can type it in the shell and immediately see the output (hellohellohellohello) without writing a full script.
-- State Memory: The shell remembers variables as long as the session is active. If you type score = 100, you can recall score later in the session.
-- The NameError: If you try to call a variable that hasn't been defined in the current shell session (like typing t without assigning it), Python throws a NameError: name 't' is not defined. This is your first introduction to debugging undefined variables.
+- Rapid Prototyping: It's perfect for quick tests. For example, if you don't know what multiplying a string by 4 does (```"hello" * 4```), you can type it in the shell and immediately see the output (```hellohellohellohello```) without writing a full script.
+- State Memory: The shell remembers variables as long as the session is active. If you type ```score = 100```, you can recall ```score``` later in the session.
+- The NameError: If you try to call a variable that hasn't been defined in the current shell session (like typing ```t``` without assigning it), Python throws a NameError: name 't' is not defined. This is your first introduction to debugging undefined variables.
 
 Importing Core Modules
 Python is famous because of its massive ecosystem of pre-written code (modules). You can import these directly into the shell to test them.
