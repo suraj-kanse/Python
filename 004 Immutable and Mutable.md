@@ -24,7 +24,7 @@ print(username) # Outputs: no_replacement
   - Python creates a memory object containing ```"suraj"```. The label username points to it.
   - When you assign ```"no_replacement"```, Python does not go into the ```"suraj"``` memory box and erase the letters.
   - Instead, Python creates a brand new memory object containing ```"no_replacement"```.
-  - It then deletes the reference arrow pointing to "suraj" and points username to the new ```"no_replacement"``` object.
+  - It then deletes the reference arrow pointing to ```"suraj"``` and points username to the new ```"no_replacement"``` object.
   - The original ```"suraj"``` object is left floating in memory until Python's Garbage Collector comes along, sees that no variables are pointing to it, and deletes it.
 
 Conclusion: The variable changed where it pointed, but the original ```"suraj"``` string object in memory was never mutated. This is what Immutability means.
@@ -38,12 +38,12 @@ y = x
 x = 15
 print(y)
 ```
-- The Trap: A beginner might think y outputs 15 because y was set to x, and x is now 15.
-- The Reality: The output is 10.
-- - x = 10 ➔ Memory creates object 10. x points to it.
-- - y = x ➔ y does not point to x. It points to whatever x is currently pointing to. So, y points directly to the memory object 10.
-- - x = 15 ➔ Memory creates a new object 15. x changes its arrow to point to 15.
-- - y's arrow never moved. It is still pointing to the original 10.
+- The Trap: A beginner might think ```y``` outputs ```15``` because ```y``` was set to ```x```, and ```x``` is now ```15```.
+- The Reality: The output is ```10```.
+  - ```x = 10``` ➔ Memory creates object ```10```. ```x``` points to it.
+  - ```y = x``` ➔ ```y``` does not point to ```x```. It points to whatever ```x``` is currently pointing to. So, ```y``` points directly to the memory object ```10```.
+  - ```x = 15``` ➔ Memory creates a new object ```15```. ```x``` changes its arrow to point to ```15```.
+  - ```y```'s arrow never moved. It is still pointing to the original ```10```.
 
 The Official Data Types List
 You must memorize which common data types fall into which category:
