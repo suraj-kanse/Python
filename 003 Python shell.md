@@ -1,4 +1,4 @@
-While most developers write Python code in IDEs (like VS Code or PyCharm), Python actually comes with a built-in interactive environment called the Python Shell (or REPL: Read-Evaluate-Print Loop). 
+While most developers write Python code in IDEs (like VS Code or PyCharm), Python actually comes with a built-in interactive environment called the **Python Shell** (or **REPL: Read-Evaluate-Print Loop**). 
 This shell is an essential tool for rapid testing, debugging, and quickly understanding how Python behaves line-by-line without needing to create and run full .py files.
 
 Launching and Exploring the Shell
@@ -25,7 +25,7 @@ Python is famous because of its massive ecosystem of pre-written code (modules).
 Indentation and Multi-line Code in the Shell
 Writing loops or multi-line code in the shell requires extreme care with formatting.
 - If you write a for loop (e.g., ```for c in "hello":```), the shell prompt changes from >>> to ..., indicating it expects a block of code.
-- The IndentationError: You must manually press the Tab or Space key to indent the code inside the loop. If you just press enter and type ```print(c)```, Python will crash with an ```IndentationError```.** In Python, indentation isn't just for readability; it is strictly required to define code blocks.**
+- The IndentationError: You must manually press the Tab or Space key to indent the code inside the loop. If you just press enter and type ```print(c)```, Python will crash with an ```IndentationError```. **In Python, indentation isn't just for readability; it is strictly required to define code blocks.**
 - To tell the shell you are finished writing the loop, you must press Enter on an empty ... line.
 
 The Reload Problem (Crucial Interview/Debugging Concept)
