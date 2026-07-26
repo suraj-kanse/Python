@@ -42,7 +42,7 @@ Instead of closing and restarting the shell to get the updated file, you can for
 from importlib import reload
 reload(hello_person)
 ```
-Once reloaded, the shell updates its memory, and your newly added variables (hello_person.person_one) will now work perfectly.
+Once reloaded, the shell updates its memory, and your newly added variables (```hello_person.person_one```) will now work perfectly.
 
 Summary & Takeaways
 - The Python Shell (REPL) is accessed by typing python in the terminal. It evaluates code line-by-line and is best used for rapid testing and prototyping.
