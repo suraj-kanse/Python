@@ -29,7 +29,7 @@ Writing loops or multi-line code in the shell requires extreme care with formatt
 - To tell the shell you are finished writing the loop, you must press Enter on an empty ... line.
 
 The Reload Problem (Crucial Interview/Debugging Concept)
-When you import your own custom Python files into the shell (e.g., import hello_chai), Python loads the current state of that file into memory.
+When you import your own custom Python files into the shell (e.g., ```import hello_person```), Python loads the current state of that file into memory.
 
 The Problem:
 If you keep the shell running, go back to your code editor, add new variables to **hello_person.py** (like ```person_one = "pratik k"```), save the file, and then try to call ```hello_person.person_one``` in the shell... it will fail with an AttributeError.
