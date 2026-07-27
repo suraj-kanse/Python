@@ -76,7 +76,7 @@ print(greet()) # Outputs: Hello User!
 
 Problem 6: Lambda Functions (Anonymous Functions)
 Goal: Create a lambda function to compute the cube of a number.
-Concept Taught: A ```lambda``` function is a shortcut for creating small, one-line functions without giving them a formal name (using ```def```). They are heavily used in frameworks (like Django) for quick, on-the-fly calculations where writing a full function definition would be overkill.
+Concept: A ```lambda``` function is a shortcut for creating small, one-line functions without giving them a formal name (using ```def```). They are heavily used in frameworks (like Django) for quick, on-the-fly calculations where writing a full function definition would be overkill.
 ```
 # The syntax: lambda arguments : expression
 # We store the lambda function in a variable named 'cube'
@@ -88,7 +88,7 @@ print(cube(3)) # Outputs: 27
 
 Problem 7: Handling Multiple Arguments (*args)
 Goal: Write a function that takes a variable number of arguments and returns their sum.
-Concept Taught: What if you don't know how many numbers a user will pass? Using ```*args``` (the asterisk is the magic part, ```args``` is just the naming convention) tells Python to grab every single argument passed in and bundle them together into a Tuple. You can then loop through that Tuple.
+Concept: What if you don't know how many numbers a user will pass? Using ```*args``` (the asterisk is the magic part, ```args``` is just the naming convention) tells Python to grab every single argument passed in and bundle them together into a Tuple. You can then loop through that Tuple.
 ```
 # The '*' tells Python to gather all positional arguments into a Tuple
 def sum_all(*args):
@@ -101,11 +101,24 @@ print(sum_all(1, 2))       # Outputs: 3
 print(sum_all(1, 2, 3, 4)) # Outputs: 10
 ```
 
+Problem 8: Keyword Arguments (```**kwargs```)
+Goal: Create a function that accepts any number of keyword arguments and prints them in the format ```key: value```.
 
+Concept: If ```*args``` gathers unnamed arguments into a Tuple, ```**kwargs``` (double asterisk) gathers named (keyword) arguments and bundles them into a Dictionary. This is incredibly useful when passing dynamic configurations or database entries.
+```
+# The '**' gathers all named arguments into a Dictionary
+def print_kwargs(**kwargs):
+    # Looping through a dictionary requires the .items() method
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
 
-
-
-
+# Using the function with arbitrary named arguments:
+print_kwargs(name="Shaktiman", power="Lazer", enemy="Kilvish") 
+# Outputs:
+# name: Shaktiman
+# power: Lazer
+# enemy: Kilvish
+```
 
 
 
