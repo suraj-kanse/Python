@@ -37,11 +37,27 @@ print(multiply(8, 5)) # Outputs: 40
 print(multiply("a", 5)) # Outputs: aaaaa
 ```
 
+Problem 4: Returning Multiple Values
+Goal: Create a function that returns both the area and circumference of a circle given its radius.
 
+Concept: Unlike many other programming languages, Python functions can return multiple distinct values at the exact same time. When a function returns multiple values, it technically returns them as a Tuple, which you can easily unpack into separate variables.
+```
+import math
 
+def circle_stats(radius):
+    # Area = π * r^2
+    area = math.pi * (radius ** 2)
+    
+    # Circumference = 2 * π * r
+    circumference = 2 * math.pi * radius
+    
+    # Return both values separated by a comma
+    return area, circumference
 
-
-
+# Unpacking the returned Tuple into two separate variables
+a, c = circle_stats(3)
+print("Area:", a, "Circumference:", c)
+```
 
 
 
