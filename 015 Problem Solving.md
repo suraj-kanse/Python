@@ -120,8 +120,18 @@ print_kwargs(name="Shaktiman", power="Lazer", enemy="Kilvish")
 # enemy: Kilvish
 ```
 
+Problem 9: Generator Functions (yield)
+Goal: Write a generator function that yields even numbers up to a specified limit.
+Concept: This is a crucial concept for memory optimization. A normal ```return``` statement destroys the function's memory the moment it fires. The ```yield``` keyword, however, returns the value but pauses the function, saving its exact state in memory. When the function is called again, it picks up right where it left off. This allows you to generate massive sequences of data one piece at a time without crashing your RAM.
+```
+def even_generator(limit):
+    # Step by 2 to only hit even numbers
+    for i in range(2, limit + 1, 2):
+        yield i
 
-
-
-
+# Using the generator in a loop:
+for num in even_generator(10):
+    print(num) 
+# Outputs: 2, 4, 6, 8, 10 (one at a time, pausing in between)
+```
 
