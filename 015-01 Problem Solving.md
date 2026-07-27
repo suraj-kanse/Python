@@ -86,10 +86,20 @@ cube = lambda x: x ** 3
 print(cube(3)) # Outputs: 27
 ```
 
+Problem 7: Handling Multiple Arguments (*args)
+Goal: Write a function that takes a variable number of arguments and returns their sum.
+Concept Taught: What if you don't know how many numbers a user will pass? Using ```*args``` (the asterisk is the magic part, ```args``` is just the naming convention) tells Python to grab every single argument passed in and bundle them together into a Tuple. You can then loop through that Tuple.
+```
+# The '*' tells Python to gather all positional arguments into a Tuple
+def sum_all(*args):
+    # 'sum()' is a built-in Python function that adds up an iterable
+    return sum(args) 
+    
+    # (Alternatively, you could manually write a 'for' loop to add them)
 
-
-
-
+print(sum_all(1, 2))       # Outputs: 3
+print(sum_all(1, 2, 3, 4)) # Outputs: 10
+```
 
 
 
