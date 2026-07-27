@@ -7,9 +7,10 @@ To find the square of a number in Python, you do not use a standard multiplicati
 - ```4 ** 2``` means $4^2$ (4 multiplied by itself: 4 * 4 = 16).
 - ```4 ** 3``` means $4^3$ (4 * 4 * 4 = 64).
 
-
-
-
+The Structural Concepts
+Before writing the code, the instructor clarified two major pieces of technical jargon that developers often get wrong:
+- The ```def``` keyword: In languages like JavaScript, you use the word ```function```. In Python, you write function definitions, so the keyword is simply ```def```.
+- Parameters vs. Arguments: The instructor shared a great memory trick for interviews. When you define a function, the variable names you put inside the parentheses are Parameters (P is for Parameter, P is for Placeholder). When you actually execute the function later and pass it real data (like the number ```4```), that real data is called an Argument.
 
 
 
