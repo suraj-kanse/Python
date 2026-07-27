@@ -28,16 +28,31 @@ When a ```for``` loop executes on a List (e.g., ```for x in [1, 2, 3]:```), Pyth
 - Termination (```StopIteration```): When ```next()``` is called but there are no more items left in memory, the iterator raises a ```StopIteration``` exception.
 - Loop Exit: The ```for``` loop silently catches the ```StopIteration``` exception and terminates gracefully without crashing your program.
 
+Practical Verification in the Python Shell
 
+1. Manual Iteration on a List
+You can manually replicate what a ```for``` loop does:
+```
+my_list = [1, 2, 3, 4]
 
+# Step 1: Create the Iterator object
+I = iter(my_list)
+print(I) # <list_iterator object at 0x...>
 
+# Step 2: Manually step through using next()
+print(next(I)) # Outputs: 1
+print(next(I)) # Outputs: 2
+print(next(I)) # Outputs: 3
+print(next(I)) # Outputs: 4
 
+# Step 3: Out of bounds triggers the exception
+print(next(I)) # Raises: StopIteration
+```
 
-
-
-
-
-
+2. Manual Iteration on Dictionaries & Ranges
+The exact same ```iter()``` and ```next()``` protocol applies universally across all Python iterables:
+- Dictionaries: ```iter(d)``` yields the keys one by one until ```StopIteration```.
+- Ranges: ```I = iter(range(3))``` ➔ ```next(I)``` yields ```0```, then ```1```, then ```2```, then ```StopIteration```.
 
 
 
