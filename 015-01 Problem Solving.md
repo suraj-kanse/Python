@@ -59,10 +59,20 @@ a, c = circle_stats(3)
 print("Area:", a, "Circumference:", c)
 ```
 
+Problem 5: Default Parameter Value
+Goal: Write a function that greets a user. If no name is provided, it should greet with a default name.
+Concept: You can assign default values to parameters directly in the function definition. If the user calls the function but forgets to pass an argument, Python will automatically use the default value instead of crashing with a "missing argument" error.
+```
+# 'name' defaults to "User" if nothing is passed
+def greet(name="User"):
+    return "Hello " + name + "!"
 
+# Scenario A: Passing a specific name
+print(greet("Suraj")) # Outputs: Hello Suraj!
 
-
-
+# Scenario B: Passing nothing
+print(greet()) # Outputs: Hello User!
+```
 
 
 
