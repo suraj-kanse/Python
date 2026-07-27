@@ -1,4 +1,4 @@
-Problem 1: Basic Function Syntax
+**Problem 1:** Basic Function Syntax
 Goal: Write a function to calculate and return the square of a number.
 Concept Taught: How to define a function, pass a parameter, and use the ```return``` keyword. Using ```return``` instead of ```print()``` inside functions, as returning data allows you to store it in variables and use it later in your program.
 ```
@@ -10,7 +10,7 @@ result = square(4)
 print("The square is:", result) # Outputs: 16
 ```
 
-Problem 2: Function with Multiple Parameters
+**Problem 2:** Function with Multiple Parameters
 Goal: Create a function that takes two numbers as parameters and returns their sum.
 Concept: Passing multiple parameters into a function using a comma-separated list.
 ```
@@ -22,7 +22,7 @@ sum_result = add(5, 5)
 print("The sum is:", sum_result) # Outputs: 10
 ```
 
-Problem 3: Polymorphism in Functions
+**Problem 3:** Polymorphism in Functions
 Goal: Write a function ```multiply``` that multiplies two numbers, but can also accept and multiply a string and a number.
 
 Concept: Python operators naturally support polymorphism (one operator doing multiple things depending on the data type). The ```*``` operator mathematically multiplies two numbers, but if you pass a string and a number, it repeats the string. You don't have to write any special logic for this; Python handles it dynamically.
@@ -37,7 +37,7 @@ print(multiply(8, 5)) # Outputs: 40
 print(multiply("a", 5)) # Outputs: aaaaa
 ```
 
-Problem 4: Returning Multiple Values
+**Problem 4:** Returning Multiple Values
 Goal: Create a function that returns both the area and circumference of a circle given its radius.
 
 Concept: Unlike many other programming languages, Python functions can return multiple distinct values at the exact same time. When a function returns multiple values, it technically returns them as a Tuple, which you can easily unpack into separate variables.
@@ -59,7 +59,7 @@ a, c = circle_stats(3)
 print("Area:", a, "Circumference:", c)
 ```
 
-Problem 5: Default Parameter Value
+**Problem 5:** Default Parameter Value
 Goal: Write a function that greets a user. If no name is provided, it should greet with a default name.
 Concept: You can assign default values to parameters directly in the function definition. If the user calls the function but forgets to pass an argument, Python will automatically use the default value instead of crashing with a "missing argument" error.
 ```
@@ -74,7 +74,7 @@ print(greet("Suraj")) # Outputs: Hello Suraj!
 print(greet()) # Outputs: Hello User!
 ```
 
-Problem 6: Lambda Functions (Anonymous Functions)
+**Problem 6:** Lambda Functions (Anonymous Functions)
 Goal: Create a lambda function to compute the cube of a number.
 Concept: A ```lambda``` function is a shortcut for creating small, one-line functions without giving them a formal name (using ```def```). They are heavily used in frameworks (like Django) for quick, on-the-fly calculations where writing a full function definition would be overkill.
 ```
@@ -86,7 +86,7 @@ cube = lambda x: x ** 3
 print(cube(3)) # Outputs: 27
 ```
 
-Problem 7: Handling Multiple Arguments (*args)
+**Problem 7:** Handling Multiple Arguments (*args)
 Goal: Write a function that takes a variable number of arguments and returns their sum.
 Concept: What if you don't know how many numbers a user will pass? Using ```*args``` (the asterisk is the magic part, ```args``` is just the naming convention) tells Python to grab every single argument passed in and bundle them together into a Tuple. You can then loop through that Tuple.
 ```
@@ -101,7 +101,7 @@ print(sum_all(1, 2))       # Outputs: 3
 print(sum_all(1, 2, 3, 4)) # Outputs: 10
 ```
 
-Problem 8: Keyword Arguments (```**kwargs```)
+**Problem 8:** Keyword Arguments (```**kwargs```)
 Goal: Create a function that accepts any number of keyword arguments and prints them in the format ```key: value```.
 
 Concept: If ```*args``` gathers unnamed arguments into a Tuple, ```**kwargs``` (double asterisk) gathers named (keyword) arguments and bundles them into a Dictionary. This is incredibly useful when passing dynamic configurations or database entries.
@@ -120,7 +120,7 @@ print_kwargs(name="Shaktiman", power="Lazer", enemy="Kilvish")
 # enemy: Kilvish
 ```
 
-Problem 9: Generator Functions (yield)
+**Problem 9:** Generator Functions (yield)
 Goal: Write a generator function that yields even numbers up to a specified limit.
 Concept: This is a crucial concept for memory optimization. A normal ```return``` statement destroys the function's memory the moment it fires. The ```yield``` keyword, however, returns the value but pauses the function, saving its exact state in memory. When the function is called again, it picks up right where it left off. This allows you to generate massive sequences of data one piece at a time without crashing your RAM.
 ```
@@ -134,4 +134,21 @@ for num in even_generator(10):
     print(num) 
 # Outputs: 2, 4, 6, 8, 10 (one at a time, pausing in between)
 ```
+
+**Problem 10:** Recursive Functions
+Goal: Create a recursive function to calculate the factorial of a number.
+Concept: Recursion occurs when a function calls itself from within its own code. The most important part of writing a recursive function is defining the Exit Strategy (Base Case). If you don't tell the function when to stop calling itself, you will trigger an infinite loop and crash your program.
+```
+def factorial(n):
+    # The Exit Strategy: Stop when n hits 0
+    if n == 0:
+        return 1
+    else:
+        # The function calls ITSELF, passing a slightly smaller number
+        return n * factorial(n - 1)
+
+print(factorial(5)) # Outputs: 120 (Because 5 * 4 * 3 * 2 * 1 = 120)
+```
+
+
 
