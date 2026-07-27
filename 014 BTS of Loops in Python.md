@@ -60,8 +60,11 @@ File objects in Python are unique compared to data structures like Lists.
 ```
 f = open('script.py')
 ```
-
-
+- For a List (```my_list```), the List itself is NOT an iterator. You must explicitly call ```iter(my_list)``` to create a new iterator object.
+  - ```iter(my_list) is my_list``` ➔ ```False```
+- For a File (```f```), the File object IS ITS OWN ITERATOR.
+  - ```iter(f) is f``` ➔ ```True```
+When you open a file in Python, the file object returned by ```open()``` is already initialized with built-in ```__iter__``` and ```__next__``` protocols.
 
 
 
