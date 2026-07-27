@@ -12,7 +12,15 @@ Before writing the code, the instructor clarified two major pieces of technical 
 - The ```def``` keyword: In languages like JavaScript, you use the word ```function```. In Python, you write function definitions, so the keyword is simply ```def```.
 - Parameters vs. Arguments: The instructor shared a great memory trick for interviews. When you define a function, the variable names you put inside the parentheses are Parameters (P is for Parameter, P is for Placeholder). When you actually execute the function later and pass it real data (like the number ```4```), that real data is called an Argument.
 
+```
+def square(number):
+    return number ** 2
 
+result = square(4)
+print(result)
+# print(square(4))
+# Console Output: 16
+```
 
 
 
