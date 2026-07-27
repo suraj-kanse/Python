@@ -66,8 +66,9 @@ f = open('script.py')
   - ```iter(f) is f``` ➔ ```True```
 When you open a file in Python, the file object returned by ```open()``` is already initialized with built-in ```__iter__``` and ```__next__``` protocols.
 
-
-
+Reading Files Line-by-Line:
+- ```f.readline()```: A convenience wrapper around the file iterator. It reads one line at a time and gracefully returns an empty string ```""``` when the End-Of-File (EOF) is reached.
+- ```next(f)``` or ```f.__next__()```: Reads raw lines using the iterator protocol. When it reaches the end of the file, it directly raises the ```StopIteration``` exception instead of returning ```""```.
 
 
 
