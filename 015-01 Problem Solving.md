@@ -74,10 +74,17 @@ print(greet("Suraj")) # Outputs: Hello Suraj!
 print(greet()) # Outputs: Hello User!
 ```
 
+Problem 6: Lambda Functions (Anonymous Functions)
+Goal: Create a lambda function to compute the cube of a number.
+Concept Taught: A ```lambda``` function is a shortcut for creating small, one-line functions without giving them a formal name (using ```def```). They are heavily used in frameworks (like Django) for quick, on-the-fly calculations where writing a full function definition would be overkill.
+```
+# The syntax: lambda arguments : expression
+# We store the lambda function in a variable named 'cube'
+cube = lambda x: x ** 3
 
-
-
-
+# Using the lambda function:
+print(cube(3)) # Outputs: 27
+```
 
 
 
