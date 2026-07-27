@@ -55,9 +55,11 @@ The exact same ```iter()``` and ```next()``` protocol applies universally across
 - Ranges: ```I = iter(range(3))``` ➔ ```next(I)``` yields ```0```, then ```1```, then ```2```, then ```StopIteration```.
 
 
-
-
-
+The File Handling Exception (Interview Goldmine)
+File objects in Python are unique compared to data structures like Lists.
+```
+f = open('script.py')
+```
 
 
 
