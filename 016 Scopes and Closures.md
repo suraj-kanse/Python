@@ -89,7 +89,12 @@ Why this is powerful:
 Even though ```chai_coder(2)``` finished running and its "house" was destroyed, the ```f``` function still remembered that ```num``` was ```2``` because it carried that memory reference in its Closure (backpack). This pattern is heavily used in advanced Python frameworks like Django.
 
 
-
+Summary & Takeaways
+- Scope: The hierarchy of variable visibility. Global is outside, Local is inside a function.
+- Access Rules: Inner scopes can read outer scopes, but outer scopes cannot read inner scopes.
+- The Climbing Rule: Python searches for variables from the inside out (Local ➔ Parent ➔ Global).
+- The ```global``` Keyword: Forces a function to overwrite a global variable. Avoid using this in production code.
+- Closures (Bag Theory): When a function returns another function, the returned function remembers and retains access to the variables from its parent's scope, carrying them like a backpack.
 
 
 
