@@ -27,6 +27,20 @@ The "Climbing" theory:
 - Python first looks inside the current room (Local Function).
 - If it doesn't find the variable, it steps out into the hallway (Enclosing/Parent Function).
 - If it doesn't find it there, it steps out of the house into the world (Global Scope).
+```
+x = 99 # Global Scope
 
+def func1():
+    x = 88 # Enclosing Scope
+    
+    def func2():
+        print(x) # Where does it get 'x' from?
+        
+    func2()
+
+func1() 
+# Outputs: 88. 
+# It checked func2 (empty), climbed up to func1 and found 88. It stopped there and never needed to check Global.
+```
 
 
