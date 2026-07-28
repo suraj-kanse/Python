@@ -43,4 +43,40 @@ func1()
 # It checked func2 (empty), climbed up to func1 and found 88. It stopped there and never needed to check Global.
 ```
 
+The ```global``` Keyword (And Why to Avoid It)
+If a function tries to modify a global variable, Python will normally prevent it by just creating a brand new local variable with the same name instead.
+
+If you absolutely must force a function to overwrite the Global variable, you use the ```global``` keyword.
+```
+x = 99
+
+def change_x():
+    global x # Tells Python: "I am taking control of the global x"
+    x = 12
+
+change_x()
+print(x) # Outputs: 12
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
