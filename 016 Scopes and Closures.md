@@ -20,10 +20,13 @@ def my_func():
 print(balance) # CRASH! The global scope cannot look into the function's house.
 ```
 
+The Climbing Algorithm (LEGB Rule)
+What happens if you have variables with the exact same name? Python follows an strict order of operations to find a variable, often referred to academically as the LEGB Rule (Local, Enclosing, Global, Built-in).
 
-
-
-
+The "Climbing" theory:
+- Python first looks inside the current room (Local Function).
+- If it doesn't find the variable, it steps out into the hallway (Enclosing/Parent Function).
+- If it doesn't find it there, it steps out of the house into the world (Global Scope).
 
 
 
