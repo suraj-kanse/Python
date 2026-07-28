@@ -8,7 +8,8 @@ In Python, whenever you indent code (like inside a ```def``` function or an ```i
 - Local Scope (The House): Variables defined inside a specific function.
 
 The Golden Rule of Scope Access:
-
+- You can always look OUT of the house to see the world. (Functions can read Global variables).
+- You can never look IN to the house from the world. (The Global scope cannot read variables trapped inside a function).
 
 
 
