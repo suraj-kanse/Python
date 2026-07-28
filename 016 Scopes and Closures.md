@@ -58,20 +58,35 @@ change_x()
 print(x) # Outputs: 12
 ```
 
+Production Warning: Modifying global variables using the ```global``` keyword is considered a terrible practice in production code. If 5 developers are working on a file and one function silently changes a global variable, it creates massive, unpredictable bugs. Read globals, but never overwrite them from inside a function.
 
 
 
+Closures & Factory Functions (The "Bag Theory")
+What happens if a function returns another function instead of returning a value?
 
+The "Bag Theory": When a parent function returns a child function, the child function doesn't just leave empty-handed. It packs a "Backpack" (a Closure) containing all the variables from the parent's house that it might need later.
 
+The Factory Function Example:
+```
+def chai_coder(num): # Parent Function
+    
+    def actual(x): # Child Function
+        return x ** num # Uses 'num' from the parent
+        
+    return actual # Returning the DEFINITION of the function, not executing it
 
+# We create two "Factories"
+f = chai_coder(2) # f now holds the 'actual' function, and packs 'num=2' in its bag
+g = chai_coder(3) # g now holds the 'actual' function, and packs 'num=3' in its bag
 
+# Now we execute them
+print(f(3)) # Outputs 9 (Because 3 ** 2)
+print(g(3)) # Outputs 27 (Because 3 ** 3)
+```
 
-
-
-
-
-
-
+Why this is powerful:
+Even though ```chai_coder(2)``` finished running and its "house" was destroyed, the ```f``` function still remembered that ```num``` was ```2``` because it carried that memory reference in its Closure (backpack). This pattern is heavily used in advanced Python frameworks like Django.
 
 
 
