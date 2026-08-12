@@ -17,7 +17,8 @@ Python treats strings almost exactly like Lists (Arrays). You can grab specific 
 - ```numbers[0:7:2]``` ➔ ```"0246"``` (Starts at 0, stops before 7, but skips every 2nd number).
 - ```numbers[0:7:3]``` ➔ ```"036"``` (Hops 3 steps at a time).
 
-List ➔ String: The ```join``` Method
+List ➔ String: The ```join``` Method:
+
 If ```.split()``` turns a String into a List, how do you turn a List back into a String? You use the ```.join()``` method on a string character.
 - ```my_list = ['Kabaddi', 'cricket', 'Hockey']```
 - ```", ".join(my_list) ➔ "Kabaddi, cricket, Hockey"```
