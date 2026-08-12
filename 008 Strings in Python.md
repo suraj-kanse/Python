@@ -24,7 +24,8 @@ If ```.split()``` turns a String into a List, how do you turn a List back into a
 - ```", ".join(my_list) ➔ "Kabaddi, cricket, Hockey"```
 - ```"-".join(my_list) ➔ "Kabaddi-cricket-Hockey"```
 
-Placeholders & Formatting
+Placeholders & Formatting:
+
 You often need to inject variables into a string dynamically (like generating a user's receipt). You use curly braces ```{}``` as placeholders, followed by the ```.format()``` method.
 ```
 destination = "Tokyo"
