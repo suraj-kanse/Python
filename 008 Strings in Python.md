@@ -36,7 +36,8 @@ receipt = "I booked {} tickets to {}".format(tickets, destination)
 print(receipt) # Outputs: I booked 2 tickets to Tokyo 
 ```
 
-The Windows Path Problem (Escape Characters & Raw Strings)
+The Windows Path Problem (Escape Characters & Raw Strings):
+
 There is a massive bug that catches almost every developer.
 If you try to print a Windows file path like ```C:\user\new\test```, Python will completely destroy the string.
 - Why? In Python, the backslash ```\``` is an "escape character" used for special commands. ```\n``` means "New Line", and ```\t``` means "Tab". Python sees ```\new``` and immediately breaks the text onto a new line.
