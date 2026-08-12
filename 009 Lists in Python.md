@@ -16,7 +16,8 @@ Just like strings, you can slice a list. The ```stop``` index is never included 
 - ```different_sports[1:]``` ➔ Grabs everything from index 1 to the end.
 - ```different_sports[:2]``` ➔ Grabs everything from the start, stopping before index 2.
 
-The "Slicing Assignment" Trap
+The "Slicing Assignment" Trap:
+
 Because Lists are Mutable, you can change their contents in-place. However, you must be extremely careful when assigning new values using a slice rather than a single index.
 
 Scenario 1: Standard Assignment (Safe)
