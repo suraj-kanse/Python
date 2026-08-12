@@ -7,7 +7,7 @@ Python offers three ways to define a string. There is no technical difference in
 - Triple Quotes: ```'''hello'''``` or ```"""hello"""```
   - Pro-Tip: Triple quotes are used when you need to preserve the exact formatting of a massive block of text (like multiple lines, line breaks, and tabs) without using escape characters. They are heavily used for "Docstrings" (documentation inside functions).
 
-Slicing & Dicing (The Exact Syntax)
+Slicing & Dicing (The Exact Syntax): 
 Python treats strings almost exactly like Lists (Arrays). You can grab specific chunks of a string using the slice syntax: ```[start : stop : step/hop]```.
 - ```numbers = "0123456789"```
 - ```numbers[0:9]``` ➔  
