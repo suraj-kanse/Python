@@ -1,6 +1,6 @@
 Strings in Python are incredibly powerful but they are immutable. Once created, you cannot change a specific character in-place. While many people spend weeks on string slicing, the basics are actually very straightforward. The goal is to learn the syntax quickly so you can spend more time building actual applications rather than memorizing slicing tricks.
 
-Defining Strings
+Defining Strings: 
 Python offers three ways to define a string. There is no technical difference in performance between them; they just serve different formatting needs:
 - Single Quotes: ```'hello'```
 - Double Quotes: ```"hello"```
