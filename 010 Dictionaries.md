@@ -10,7 +10,7 @@ sports_types = {"cricket": "bat-ball-stump", "football": "team sport", "tennis":
 print(sports_types["cricket"]) # Outputs: "bat-ball-stump"
 ```
 
-Bracket Notation vs. The ```.get()``` Method
+Bracket Notation vs. The ```.get()``` Method:
 What happens if you try to access a key that does not exist?
 - Bracket Notation (```sports_types["lemon"]```): Python will crash and throw a ```KeyError```.
 - The ```.get()``` Method (```sports_types.get("lemon")```): Python will safely return ```None``` without crashing your program.
