@@ -12,8 +12,8 @@ print(sports_types["cricket"]) # Outputs: "bat-ball-stump"
 
 Bracket Notation vs. The ```.get()``` Method:
 What happens if you try to access a key that does not exist?
-- Bracket Notation (```sports_types["lemon"]```): Python will crash and throw a ```KeyError```.
-- The ```.get()``` Method (```sports_types.get("lemon")```): Python will safely return ```None``` without crashing your program.
+- Bracket Notation (```sports_types["carrom"]```): Python will crash and throw a ```KeyError```.
+- The ```.get()``` Method (```sports_types.get("carrom")```): Python will safely return ```None``` without crashing your program.
 - Industry Standard: Always use ```.get()``` when you aren't 100% sure the key exists (like when processing user input).
 
 Modifying and Deleting Data
