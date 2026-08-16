@@ -43,7 +43,7 @@ for sport in sports_types:
 # Outputs: bat-ball-stump, team sport, racket-ball
 ```
 
-3. Looping for Both (The ```.items()``` Method)
+3. Looping for Both (The ```.items()``` Method):
 If you want both the Key and the Value at the same time, you must use the ```.items()``` method.
 ```
 for key, value in sports_types.items():
