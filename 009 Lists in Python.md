@@ -20,13 +20,13 @@ The "Slicing Assignment" Trap:
 
 Because Lists are Mutable, you can change their contents in-place. However, you must be extremely careful when assigning new values using a slice rather than a single index.
 
-Scenario 1: Standard Assignment (Safe)
+Scenario 1: Standard Assignment (Safe):
 ```
 different_sports[1] = "Kabaddi"
 # Result: ['Football', 'Kabaddi', 'Badminton', 'Tennis']
 ```
 
-Scenario 2: Slicing Assignment (The Trap)
+Scenario 2: Slicing Assignment (The Trap):
 ```
 different_sports= ["Football", "Cricket", "Badminton", "Tennis"]
 # Watch what happens when you slice [1:2] but pass a String!
@@ -58,7 +58,7 @@ sports_copy = different_sports.copy()
 # .copy() forces Python to create a brand new, separate object in memory.
 ```
 
-The Advanced Magic: List Comprehension
+The Advanced Magic: List Comprehension:
 Introducing a highly "Pythonic" syntax that beginners often find weird, but experts use constantly.
 List Comprehension allows you to generate a fully populated list in a single line of code, combining a for loop and the logic into the brackets.
 Goal: Create a list of the squared numbers from 0 to 9.
