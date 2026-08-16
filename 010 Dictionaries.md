@@ -75,8 +75,19 @@ print(squared_nums)
 # Outputs: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 ```
 
+Dynamic Creation with ```fromkeys()```:
 
+If you have a list of keys and want to create a dictionary where every key starts with the exact same default value, you use ```dict.fromkeys()```.
+```
+keys = ["masala", "ginger", "lemon"]
+default_value = "delicious"
 
+# Generates a new dictionary from the list
+new_dict = dict.fromkeys(keys, default_value)
+
+print(new_dict)
+# Outputs: {'masala': 'delicious', 'ginger': 'delicious', 'lemon': 'delicious'}
+```
 
 
 
