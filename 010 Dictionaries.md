@@ -25,7 +25,7 @@ Dictionaries are Mutable, meaning you can change them in-place.
 - ```del``` keyword: Physically deletes the item from memory. ```del sports_types["tennis"]```.
 - ```.clear()```: Empties the entire dictionary, leaving it as ```{}```.
 
-Looping Through Dictionaries (The 3 Ways)
+Looping Through Dictionaries (The 3 Ways):
 Looping through a dictionary is slightly different than looping through a list because you have to decide if you want the Keys, the Values, or Both.
 
 1. Looping for Keys (Default behavior)
