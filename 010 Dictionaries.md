@@ -16,7 +16,7 @@ What happens if you try to access a key that does not exist?
 - The ```.get()``` Method (```sports_types.get("carrom")```): Python will safely return ```None``` without crashing your program.
 - Industry Standard: Always use ```.get()``` when you aren't 100% sure the key exists (like when processing user input).
 
-Modifying and Deleting Data
+Modifying and Deleting Data:
 Dictionaries are Mutable, meaning you can change them in-place.
 - Update a value: ```sports_types["tennis"] = "fresh"``` (Changes the value of "tennis" from "racket-ball" to "fresh").
 - Add a new Key-Value pair: ```sports_types["earl grey"] = "citrus"``` (If the key doesn't exist, Python automatically adds it).
