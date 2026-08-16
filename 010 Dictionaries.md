@@ -51,9 +51,29 @@ for key, value in sports_types.items():
 ```
 
 
+Nested Dictionaries:
 
+You can put dictionaries inside of dictionaries! This is heavily used when dealing with JSON data from APIs.
+```
+tea_shop = {
+    "chai": {"masala": "spicy", "ginger": "zesty"},
+    "tea": {"green": "mild", "black": "strong"}
+}
 
+# Accessing nested data (Chain the brackets!)
+print(tea_shop["chai"]["ginger"]) # Outputs: "zesty"
+```
 
+Dictionary Comprehension:
+
+Just like List Comprehension, you can generate dictionaries dynamically using a loop inside the curly braces.
+```
+# Create a dictionary where the Key is the number, and the Value is the number squared
+squared_nums = {x: x**2 for x in range(6)}
+
+print(squared_nums)
+# Outputs: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+```
 
 
 
