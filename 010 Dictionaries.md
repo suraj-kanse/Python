@@ -88,7 +88,7 @@ new_dict = dict.fromkeys(keys, default_value)
 print(new_dict)
 # Outputs: {'masala': 'delicious', 'ginger': 'delicious', 'lemon': 'delicious'}
 ```
-
+- The Trap: If you pass an array/list as the ```default_value```, Python will assign that entire array as the value for every single key, which is usually not what you want.
 
 
 
