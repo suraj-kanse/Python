@@ -18,8 +18,8 @@ What happens if you try to access a key that does not exist?
 
 Modifying and Deleting Data:
 Dictionaries are Mutable, meaning you can change them in-place.
-- Update a value: ```sports_types["tennis"] = "fresh"``` (Changes the value of "tennis" from "racket-ball" to "fresh").
-- Add a new Key-Value pair: ```sports_types["earl grey"] = "citrus"``` (If the key doesn't exist, Python automatically adds it).
+- Update a value: ```sports_types["tennis"] = "tennis_rackets"``` (Changes the value of "tennis" from "racket-ball" to "tennis_rackets").
+- Add a new Key-Value pair: ```sports_types["hockey"] = "hockey_stick-ball"``` (If the key doesn't exist, Python automatically adds it).
 - ```.pop(key)```: Removes the specific key you ask for and returns its value. ```sports_types.pop("football")```.
 - ```.popitem()```: Removes and returns the very last key-value pair added to the dictionary.
 - ```del``` keyword: Physically deletes the item from memory. ```del sports_types["tennis"]```.
